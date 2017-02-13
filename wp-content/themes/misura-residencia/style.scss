@@ -1,0 +1,134 @@
+/*
+Theme Name:  Misura Residencia
+Description: Sitio de Misura
+Version: 1.0
+Author: Rodrigo Luis Santander (Roider)
+Author URI: http://roidersp.github.io
+*/
+
+/* ======= ALINEACIONES ======= */
+
+$font-primary : "Buckley W00 Regular";
+
+@font-face {font-family: "Buckley W00 Regular";
+  src: url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.eot"); /* IE9*/
+  src: url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.woff2") 
+  format("woff2"), /* chrome、firefox */
+  url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.woff") format("woff"), /* chrome、firefox */
+  url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.svg#Buckley") format("svg"); /* iOS 4.1- */
+}
+
+/*======= Header =======*/
+
+body{
+  background-color: #f3e6cc;
+  padding-top: 124px;
+}
+
+header{
+  background-color: #f3e6cc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  .container{
+    padding: 45px 0;
+    display: table;
+  }
+  nav{
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .header_nav{
+    width: calc( 50% - 100px );
+    height: 34px;
+    .nav_item{
+      margin: 0 55px;
+      display: inline-block;
+      font-family: $font-primary;
+      color: #004074;
+      letter-spacing: -.2px;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+  }
+  .left .nav_cont{
+    float: right; 
+  }
+  .right .nav_cont{
+    float: left; 
+  }
+}
+
+#home_slider{
+  width: 100%;
+  height: calc(100vh - 124px);
+  .slider{
+      height: 100%;
+      div{
+        height: 100%;
+      }
+    .slider_item{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .slick-prev{
+    left: 25px;
+  }
+  .slick-arrow{
+    z-index: 2;
+  }
+  .slick-next{
+    right: 25px;
+  }
+  .slick-dots{
+    bottom: 25px;
+    li{
+      
+      button{
+        &:before{
+          color: white;
+          font-size: 40px;
+          opacity: 1;
+        }
+      }
+      &.slick-active{
+        button{
+          &:before{
+            color: #043758;
+          }
+        }
+      }
+    }
+  }
+  .slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
+}
+
+
+
+/*======= MEDIA QUERIES =======*/
+
+/* == iPad Horizontal == */
+@media (max-width: 1024px){
+
+}
+
+/* == iPad Vertical == */
+@media (max-width:768px){
+
+}
+
+/* == iPhone 6s Plus == */
+@media (max-width:414px){
+
+}
+
+/* == Smartphone == */
+@media (max-width:360px){
+
+}
