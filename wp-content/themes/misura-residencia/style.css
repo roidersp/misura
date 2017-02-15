@@ -8,8 +8,16 @@ Author URI: http://roidersp.github.io
 /* ======= ALINEACIONES ======= */
 @font-face { font-family: "Buckley W00 Regular"; src: url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.eot"); /* IE9*/ src: url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.woff2") format("woff2"), url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.woff") format("woff"), url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.ttf") format("truetype"), url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.svg#Buckley") format("svg"); /* iOS 4.1- */ }
 
+@font-face { font-family: 'PopulaireW00'; src: url("assets/fonts/Populaire/PopulaireW00-Regular.eot"); src: url("assets/fonts/Populaire/PopulaireW00-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Populaire/PopulaireW00-Regular.woff2") format("woff2"), url("assets/fonts/Populaire/PopulaireW00-Regular.woff") format("woff"), url("../assets/fonts/Populaire/PopulaireW00-Regular.ttf") format("truetype"), url("../assets/fonts/Populaire/PopulaireW00-Regular.svg#PopulaireW00-Regular") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'PopulaireLight'; src: url("assets/fonts/Populaire/PopulaireLight.eot"); src: url("assets/fonts/Populaire/PopulaireLight.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Populaire/PopulaireLight.woff2") format("woff2"), url("assets/fonts/Populaire/PopulaireLight.woff") format("woff"), url("assets/fonts/Populaire/PopulaireLight.ttf") format("truetype"), url("assets/fonts/Populaire/PopulaireLight.svg#PopulaireLight") format("svg"); font-weight: 300; font-style: normal; }
+
 /*======= Header =======*/
 body { background-color: #f3e6cc; padding-top: 124px; }
+
+.container { width: 1140px; }
+
+#logo { display: table; float: left; margin-top: -100px; }
 
 header { background-color: #f3e6cc; position: fixed; top: 0; width: 100%; z-index: 10; }
 
@@ -17,21 +25,19 @@ header .container { padding: 45px 0; display: table; }
 
 header nav { background-color: transparent; box-shadow: none; }
 
-header .header_nav { width: calc( 50% - 100px); height: 34px; }
+header .header_nav { width: calc( 50% - 106px); height: auto; margin-top: 66px; }
 
-header .header_nav .nav_item { margin: 0 55px; display: inline-block; font-family: "Buckley W00 Regular"; color: #004074; letter-spacing: -.2px; font-size: 24px; text-transform: uppercase; }
+header .header_nav .nav_cont { width: 100%; }
+
+header .header_nav .nav_cont .nav_item { width: 50%; display: block; float: left; font-family: "PopulaireW00"; color: #004074; font-size: 34px; text-transform: uppercase; text-align: center; }
 
 header .left .nav_cont { float: right; }
 
 header .right .nav_cont { float: left; }
 
-#home_slider { width: 100%; height: calc(100vh - 124px); }
+#home_slider .slider-item { width: 100%; height: auto; }
 
-#home_slider .slider { height: 100%; }
-
-#home_slider .slider div { height: 100%; }
-
-#home_slider .slider .slider_item { width: 100%; height: 100%; }
+#home_slider .slider-item img { width: 100%; }
 
 #home_slider .slick-prev { left: 25px; }
 
@@ -46,6 +52,16 @@ header .right .nav_cont { float: left; }
 #home_slider .slick-dots li.slick-active button:before { color: #043758; }
 
 #home_slider .slick-dotted.slick-slider { margin-bottom: 0; }
+
+#media_content img { width: 100%; }
+
+#media_content .padding_l { padding-left: 0; }
+
+#media_content .col { padding-bottom: 2.5px; padding-top: 2.5px; }
+
+#media_content .col.s6:nth-child(even) { padding-left: 5px; }
+
+#media_content .col.s6:nth-child(odd) { padding-right: 5px; }
 
 /*======= MEDIA QUERIES =======*/
 /* == iPad Horizontal == */

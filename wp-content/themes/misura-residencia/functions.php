@@ -87,6 +87,7 @@ function my_custom_init() {
         'edit_item' => __( 'Editar producto' ),
         'new_item' => __( 'Nuevo producto' ),
         'view_item' => __( 'Ver producto' ),
+        'menu_name'     => __('Productos', 'Productos'),
         'search_items' => __( 'Buscar productos' ),
         'not_found' =>  __( 'No se han encontrado productos' ),
         'not_found_in_trash' => __( 'No se han encontrado productos en la papelera' ),
@@ -129,12 +130,16 @@ function create_book_taxonomies() {
         'update_item' => __( 'Actualizar Linea' ),
         'add_new_item' => __( 'Añadir nuevo Linea' ),
         'new_item_name' => __( 'Nombre del nuevo Linea' ),
+        'menu_name' => __('News Categories', 'Productos')
+        
 );
 register_taxonomy( 'linea', array( 'productos' ), array(
         'hierarchical' => true,
+        'label' => 'News Categories',
         'labels' => $labels, /* Aquí es donde se utiliza la variable $labels que hemos creado arriba*/
         'show_ui' => true,
         'query_var' => true,
+        'show_in_nav_menus' => true,
         'rewrite' => array( 'slug' => 'linea', 'with_front' => false ),
 ));
 // Añado otra taxonomía, esta vez no es jerárquica, como las etiquetas.
@@ -148,7 +153,8 @@ $labels = array(
         'edit_item' => __( 'Editar Tipo' ),
         'update_item' => __( 'Actualizar Tipo' ),
         'add_new_item' => __( 'Añadir nuevo Tipo' ),
-        'new_item_name' => __( 'Nombre del nuevo Tipo' )
+        'new_item_name' => __( 'Nombre del nuevo Tipo' ),
+        'show_in_nav_menus' => true
 );
  
 register_taxonomy( 'tipo', array( 'productos' ), array(
@@ -156,6 +162,7 @@ register_taxonomy( 'tipo', array( 'productos' ), array(
         'labels' => $labels, /* Aquí es donde se utiliza la variable $labels que hemos creado arriba*/
         'show_ui' => true,
         'query_var' => true,
+        'show_in_nav_menus' => true,
         'rewrite' => array( 'slug' => 'productos', 'with_front' => false ),
 ));
 
@@ -205,6 +212,17 @@ flush_rewrite_rules();
 		wp_enqueue_style('slick');
 		wp_enqueue_style('slick-theme');
 	}
+
+  // Google fonts
+  
+  function wpb_add_google_fonts() {
+    wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto', false ); 
+  }
+  
+add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+
+
 
 	/* Opcionales
 

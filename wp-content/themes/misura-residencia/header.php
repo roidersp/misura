@@ -1,4 +1,4 @@
-<!--DOCTYPE html-->
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -15,29 +15,21 @@
     	<div class="container">
       	<div class="left header_nav">
           <div class="nav_cont">
-            <a href="#" class="nav_item">Valores</a>
-            <a href="#" class="nav_item">Productos</a>
+            <div href="#" class="nav_item">Valores</div>
+            <div href="#" class="nav_item">Productos</div>
           </div>
+        </div>
+        <div class="center" id="logo">
+          <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-misura.png" alt="" />
         </div>
         <div class="right header_nav">
           <div class="nav_cont">
-            <a href="#" class="nav_item">Te tratamos bien</a>
-            <a href="#" class="nav_item">Respuestas Misura</a>
+            <div class="nav_item">Te tratamos bien</div>
+            <div class="nav_item">Respuestas Misura</div>
           </div>
         </div>
       </div>
   	</header>
-  	<section id="home_slider">
-    	<div class="slider-home">
-        <div class="slider-item" style="background-image: url(http://lorempixel.com/1920/1080/sports/1)"></div>
-        <div class="slider-item" style="background-image: url(http://lorempixel.com/1920/1080/sports/2)"></div>
-        <div class="slider-item" style="background-image: url(http://lorempixel.com/1920/1080/sports/3)"></div>
-      </div>
-  	</section>
-  	<section id="media_content">
-    	<div class="media_row">
-      	<div class="media_item"></div>
-    	</div>
-  	</section>
+  	
   	
   

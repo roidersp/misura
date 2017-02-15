@@ -4,7 +4,7 @@ Template Name: Productos
 */
 ?>
 
-<?php get_header(); ?>
+<?php //get_header(); ?>
 
 
 <div style="width: 100%;display: table; background-color: white;padding: 40px;">
@@ -30,4 +30,4 @@ Template Name: Productos
   
 </div>
 
-<?php get_footer(); ?>
+<?php //get_footer(); ?>
