@@ -52,25 +52,6 @@ Template Name: Home
     	</div>
   	</section>
   	</main>
-<<<<<<< HEAD
-  	<section id="contacto">
-    	<div class="container">
-      	<div id="contact_form">
-        	<div id="contact_text">
-          	Nos interesa tu opinión e inquietudes. ¡Escríbenos! 
-        	</div>
-          	<div id="form_contact">
-            	<?php echo do_shortcode( '[contact-form-7 id="98" title="Contacto"]' ) ?>
-          	</div>
-        	</div>
-      	</div>
-    	</div>
-  	</section>
-  	
-  	
-  	
-<?php get_footer(); ?>
-=======
+
   	
   	<?php get_footer(); ?>
->>>>>>> parent of 7f64403... Home
