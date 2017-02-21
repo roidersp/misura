@@ -63,9 +63,13 @@ header .right .nav_cont { float: left; }
 
 #home_slider .slider-item img { width: 100%; }
 
-#home_slider .slick-prev { left: 25px; }
+#home_slider .slick-prev { left: 25px; transform: rotate(-180deg); }
 
-#home_slider .slick-arrow { z-index: 2; }
+#home_slider .slick-arrow { z-index: 2; width: 57px; height: 57px; background-image: url(assets/images/flecha-slider-home.png); background-repeat: no-repeat; background-size: contain; opacity: .85; }
+
+#home_slider .slick-arrow:hover { opacity: 1; }
+
+#home_slider .slick-arrow:before { content: ""; }
 
 #home_slider .slick-next { right: 25px; }
 
@@ -103,7 +107,7 @@ header .right .nav_cont { float: left; }
 
 #social-hub .social-item img { width: 100%; }
 
-#contacto { padding-top: 60px; padding-bottom: 40px; background-color: #013c71; display: table; width: 100%; }
+#contacto { padding-top: 60px; padding-bottom: 40px; background-color: #013c71; background-image: url(assets/images/back-azul-home.jpg); background-position: center center; background-repeat: no-repeat; display: table; width: 100%; }
 
 #contacto .container { background-image: url(assets/images/contacto_img.png); background-repeat: no-repeat; background-position: left 10px center; display: table; }
 
@@ -133,11 +137,27 @@ header .right .nav_cont { float: left; }
 
 #contacto .g-recaptcha div { margin: 20px auto; width: 100% !important; }
 
-footer { height: 350px; width: 100%; overflow: hidden; }
+footer { height: 350px; width: 100%; overflow: hidden; background-image: url(assets/images/footer-misura.jpg); }
 
-footer #logo_footer { width: 190px; margin: auto; margin-top: -38px; }
+footer #logo_footer { width: 190px; margin: auto; margin-top: -38px; margin-bottom: 70px; }
 
 footer #logo_footer img { width: 100%; }
+
+footer .footer_menu_cont { display: table; width: 100%; }
+
+footer .col { display: table-cell; }
+
+footer .footer_menu { display: table-cell; vertical-align: bottom; }
+
+footer .footer-item { float: left; }
+
+footer .footer-item a { color: white; }
+
+footer .footer_social { display: table; margin: auto; }
+
+footer .footer_social .social_item { display: inline-block; width: 60px; height: 60px; }
+
+footer .footer_social .social_item img { width: 100%; }
 
 /*======= MEDIA QUERIES =======*/
 /* == iPad Horizontal == */
