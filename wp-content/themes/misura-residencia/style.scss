@@ -69,6 +69,13 @@ body{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+}
+
+.home{
+  .row{
+    margin-bottom: 5px;
+  }
 }
 
 header{
@@ -221,9 +228,7 @@ header{
   }
 }
 
-<<<<<<< HEAD
 
-=======
 .titulo_image{
   display: table;
   margin: auto;
@@ -386,7 +391,6 @@ footer{
     }
   }
 }
->>>>>>> parent of 533267f... cambios en home
 
 
 /*======= MEDIA QUERIES =======*/

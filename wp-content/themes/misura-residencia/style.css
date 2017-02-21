@@ -21,6 +21,8 @@ body { background-color: #f3e6cc; padding-top: 120px; }
 
 #logo { display: table; float: left; margin-top: -100px; position: absolute; left: 50%; transform: translateX(-50%); }
 
+.home .row { margin-bottom: 5px; }
+
 header { background-color: #f3e6cc; position: fixed; top: 0; width: 100%; z-index: 10; }
 
 header .container { padding: 50px 0; display: table; }
@@ -84,7 +86,6 @@ header .right .nav_cont { float: left; }
 #media_content .col.s6:nth-child(even) { padding-left: 5px; }
 
 #media_content .col.s6:nth-child(odd) { padding-right: 5px; }
-
 
 .titulo_image { display: table; margin: auto; }
 
