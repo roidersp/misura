@@ -69,7 +69,6 @@ body{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .home{
@@ -168,6 +167,7 @@ header{
      .slider-item{
       width: 100%;
       height: auto;
+      font-size: 0;
       img{
         width: 100%;
       }
@@ -175,9 +175,23 @@ header{
   }
   .slick-prev{
     left: 25px;
+    transform: rotate(-180deg);
   }
   .slick-arrow{
     z-index: 2;
+    width: 57px;
+    height: 57px;
+    background-image: url(assets/images/flecha-slider-home.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .85;
+    &:hover{
+      opacity: 1;
+    }
+    &:before{
+      
+      content: "";
+    }
   }
   .slick-next{
     right: 25px;
@@ -215,8 +229,9 @@ header{
     padding-left: 0;
   }
   .col{
-    padding-bottom: 2.5px;
-    padding-top: 2.5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 0;
     &.s6{
       &:nth-child(even){
         padding-left: 5px;
@@ -227,7 +242,6 @@ header{
     }
   }
 }
-
 
 .titulo_image{
   display: table;
@@ -289,6 +303,9 @@ header{
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #013c71;
+  background-image: url(assets/images/back-azul-home.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   display: table;
   width: 100%;
   .container{
@@ -382,12 +399,45 @@ footer{
   height: 350px;
   width: 100%;
   overflow: hidden;
+  background-image: url(assets/images/footer-misura.jpg);
   #logo_footer{
     width: 190px;
     margin: auto;
     margin-top: -38px;
+    margin-bottom: 70px;
     img{
       width: 100%;
+    }
+  }
+  .footer_menu_cont{
+    display: table;
+    width: 100%;
+    
+  }
+  .col{
+     display: table-cell;
+  }
+  .footer_menu{
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  .footer-item{
+    float: left;
+    
+    a{
+      color: white;
+    }
+  }
+  .footer_social{
+    display: table;
+    margin: auto;
+    .social_item{
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      img{
+        width: 100%;
+      }
     }
   }
 }
