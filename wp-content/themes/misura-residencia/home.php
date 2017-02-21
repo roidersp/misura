@@ -30,7 +30,8 @@ Template Name: Home
         endif;
         
         ?>
-
+       
+        
       </div>
   	</section>
   	<section id="media_content" class="row">
@@ -50,48 +51,8 @@ Template Name: Home
       	<a href="<?= get_field( "url_5" ) ?>"><img src="<?= get_field( "imagen_5" )["url"] ?>" alt="" /></a>
     	</div>
   	</section>
-  	<section id="social-hub" class="row">
-    	<div class="titulo_image">
-      	<img src="<?= get_template_directory_uri(); ?>/assets/images/social-hub.png" alt="social-hub"/>
-    	</div>
-    	<div id="social-cont" class="col s12">
-    	<?php
-        // check if the repeater field has rows of data
-        if( have_rows('social_hub') ):
-        
-         	// loop through the rows of data
-            while ( have_rows('social_hub') ) : the_row();
-            
-            ?>
-             <div class="social-item col s3 social_<?= get_sub_field( "red_social" ) ?>" >
-               <a href="<?= get_sub_field( "url" ) ?>"><img src="<?= get_sub_field( "imagen" )["url"] ?>" alt="" /></a>
-             </div>
-
-        <?php
-            endwhile;
-             while ( have_rows('social_hub') ) : the_row();
-            
-            ?>
-             <div class="social-item col s3 social_<?= get_sub_field( "red_social" ) ?>" >
-               <a href="<?= get_sub_field( "url" ) ?>"><img src="<?= get_sub_field( "imagen" )["url"] ?>" alt="" /></a>
-             </div>
-
-        <?php
-            endwhile;
-        
-        else :
-        
-            // no rows found
-        
-        endif;
-        
-        ?>
-    	</div>
-    	<div id="social_more">
-      	
-    	</div>
-  	</section>
   	</main>
+<<<<<<< HEAD
   	<section id="contacto">
     	<div class="container">
       	<div id="contact_form">
@@ -109,3 +70,7 @@ Template Name: Home
   	
   	
 <?php get_footer(); ?>
+=======
+  	
+  	<?php get_footer(); ?>
+>>>>>>> parent of 7f64403... Home
