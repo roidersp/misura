@@ -6,6 +6,8 @@ Author: Rodrigo Luis Santander (Roider)
 Author URI: http://roidersp.github.io
 */
 /* ======= ALINEACIONES ======= */
+#wpadminbar { display: none; }
+
 @font-face { font-family: "Buckley W00 Regular"; src: url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.eot"); /* IE9*/ src: url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.woff2") format("woff2"), url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.woff") format("woff"), url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.ttf") format("truetype"), url("../assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.svg#Buckley") format("svg"); /* iOS 4.1- */ }
 
 @font-face { font-family: 'PopulaireW00'; src: url("assets/fonts/Populaire/PopulaireW00-Regular.eot"); src: url("assets/fonts/Populaire/PopulaireW00-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Populaire/PopulaireW00-Regular.woff2") format("woff2"), url("assets/fonts/Populaire/PopulaireW00-Regular.woff") format("woff"), url("../assets/fonts/Populaire/PopulaireW00-Regular.ttf") format("truetype"), url("../assets/fonts/Populaire/PopulaireW00-Regular.svg#PopulaireW00-Regular") format("svg"); font-weight: normal; font-style: normal; }
@@ -13,19 +15,19 @@ Author URI: http://roidersp.github.io
 @font-face { font-family: 'PopulaireLight'; src: url("assets/fonts/Populaire/PopulaireLight.eot"); src: url("assets/fonts/Populaire/PopulaireLight.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Populaire/PopulaireLight.woff2") format("woff2"), url("assets/fonts/Populaire/PopulaireLight.woff") format("woff"), url("assets/fonts/Populaire/PopulaireLight.ttf") format("truetype"), url("assets/fonts/Populaire/PopulaireLight.svg#PopulaireLight") format("svg"); font-weight: 300; font-style: normal; }
 
 /*======= Header =======*/
-body { background-color: #f3e6cc; padding-top: 124px; }
+body { background-color: #f3e6cc; padding-top: 120px; }
 
 .container { width: 1140px; }
 
-#logo { display: table; float: left; margin-top: -100px; }
+#logo { display: table; float: left; margin-top: -100px; position: absolute; left: 50%; transform: translateX(-50%); }
 
 header { background-color: #f3e6cc; position: fixed; top: 0; width: 100%; z-index: 10; }
 
-header .container { padding: 45px 0; display: table; }
+header .container { padding: 50px 0; display: table; }
 
 header nav { background-color: transparent; box-shadow: none; }
 
-header .header_nav { width: calc( 50% - 106px); height: auto; margin-top: 66px; }
+header .header_nav { width: calc( 50% - 106px); height: auto; }
 
 header .header_nav .nav_cont { width: 100%; }
 
@@ -82,6 +84,7 @@ header .right .nav_cont { float: left; }
 #media_content .col.s6:nth-child(even) { padding-left: 5px; }
 
 #media_content .col.s6:nth-child(odd) { padding-right: 5px; }
+
 
 
 /*======= MEDIA QUERIES =======*/

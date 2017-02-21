@@ -12,6 +12,9 @@ $font-primary : "Buckley W00 Regular";
 $font-pop : "PopulaireW00";
 $font-pop-l : "PopulaireLight";
 
+#wpadminbar{
+  display: none;
+}
 
 @font-face {font-family: "Buckley W00 Regular";
   src: url("assets/fonts/Buckley/75ba54d9fa931a57fe28d3e0b1b73195.eot"); /* IE9*/
@@ -52,7 +55,7 @@ $font-pop-l : "PopulaireLight";
 
 body{
   background-color: #f3e6cc;
-  padding-top: 124px;
+  padding-top: 120px;
 }
 
 .container{
@@ -63,6 +66,9 @@ body{
   display: table;
   float: left;
   margin-top: -100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 header{
@@ -72,7 +78,7 @@ header{
   width: 100%;
   z-index: 10;
   .container{
-    padding: 45px 0;
+    padding: 50px 0;
     display: table;
   }
   nav{
@@ -82,7 +88,6 @@ header{
   .header_nav{
     width: calc( 50% - 106px );
     height: auto;
-    margin-top: 66px;
     .nav_cont{
       width: 100%;
       .nav_item{
