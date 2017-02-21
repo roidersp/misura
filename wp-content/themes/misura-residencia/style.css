@@ -83,61 +83,7 @@ header .right .nav_cont { float: left; }
 
 #media_content .col.s6:nth-child(odd) { padding-right: 5px; }
 
-<<<<<<< HEAD
-=======
-.titulo_image { display: table; margin: auto; }
 
-#social-hub { padding-top: 64px; padding-bottom: 50px; margin-left: -2rem; margin-right: -2rem; background-image: url(assets/images/social-hub-back.png); background-size: contain; background-repeat: no-repeat; background-position: center top 145px; }
-
-#social-hub #social-cont { padding: 0 2rem; margin-top: 10px; padding-top: 30px; display: table; padding-bottom: 60px; }
-
-#social-hub .social-item { padding: 0 !important; margin: 0 !important; font-size: 0; position: relative; overflow: hidden; }
-
-#social-hub .social-item a { display: table; position: relative; }
-
-#social-hub .social-item a:after { content: ''; width: 100%; height: 100%; position: relative; background-color: rgba(29, 15, 104, 0.5); position: absolute; top: 0; bottom: 0; opacity: 0; z-index: 2; left: 0; transition: all 0.3s ease-in-out; }
-
-#social-hub .social-item a:hover:after { opacity: 1; }
-
-#social-hub .social-item img { width: 100%; }
-
-#contacto { padding-top: 60px; padding-bottom: 40px; background-color: #013c71; display: table; width: 100%; }
-
-#contacto .container { background-image: url(assets/images/contacto_img.png); background-repeat: no-repeat; background-position: left 10px center; display: table; }
-
-#contacto #contact_form { width: 570px; float: right; margin-right: 50px; text-align: center; }
-
-#contacto #contact_form #contact_text { font-family: "Buckley W00 Regular"; font-size: 39px; text-align: center; color: white; }
-
-#contacto #contact_form #form_contact { width: 435px; margin: auto; color: #013c71; }
-
-#contacto #contact_form #form_contact::-webkit-input-placeholder { color: #013c71; }
-
-#contacto #contact_form #form_contact :-moz-placeholder { /* Firefox 18- */ color: #013c71; }
-
-#contacto #contact_form #form_contact ::-moz-placeholder { /* Firefox 19+ */ color: #013c71; }
-
-#contacto #contact_form #form_contact :-ms-input-placeholder { color: #013c71; }
-
-#contacto #contact_form #form_contact input { background-color: white; color: black; padding: 0 10px; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; margin: auto; }
-
-#contacto #contact_form #form_contact input[type="checkbox"]:not(:checked), #contacto #contact_form #form_contact input[type="checkbox"]:checked { position: absolute; left: 0; opacity: 1; margin-top: 0px; width: 30px; height: 30px; }
-
-#contacto #contact_form #form_contact textarea { background-color: white; width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; min-width: 100%; resize: none; height: 166px; padding: 10px; }
-
-#contacto #contact_form #form_contact .terminos { color: white; position: relative; padding-left: 30px; width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
-
-#contacto #contact_form #form_contact .terminos .wpcf7-list-item-label, #contacto #contact_form #form_contact .terminos .wpcf7-form-control { width: 100%; }
-
-#contacto .g-recaptcha div { margin: 20px auto; width: 100% !important; }
-
-footer { height: 350px; width: 100%; overflow: hidden; }
-
-footer #logo_footer { width: 190px; margin: auto; margin-top: -38px; }
-
-footer #logo_footer img { width: 100%; }
-
->>>>>>> parent of 533267f... cambios en home
 /*======= MEDIA QUERIES =======*/
 /* == iPad Horizontal == */
 /* == iPad Vertical == */
