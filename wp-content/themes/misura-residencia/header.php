@@ -29,7 +29,7 @@
                                               
                         foreach($tax_terms as $term_single) { 
                       ?>
-                        <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
+                            <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
                       
                       <?php         
                         } 
@@ -45,10 +45,11 @@
                                               
                         foreach($tax_terms as $term_single) { 
                       ?>
-                        <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
+                            <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
                       
                       <?php         
                         } 
+                          
                       ?>
                   </div>
                 </div>
