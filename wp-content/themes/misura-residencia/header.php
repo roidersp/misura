@@ -15,8 +15,46 @@
     	<div class="container">
       	<div class="left header_nav">
           <div class="nav_cont">
-            <div href="#" class="nav_item">Valores</div>
-            <div href="#" class="nav_item">Productos</div>
+            <div href="#" class="nav_item"><a href="#">Valores</a></div>
+            <div href="#" class="nav_item" id="prodructos_nav">
+              <a href="">Productos</a>
+              <div class="nav_subitem">
+                <div class="subnav_cont">
+                  <div class="sub_nav_side">
+                    <div class="subnav_title">the line for me</div>
+                      <?php 
+                        $taxonomy = 'tipo';
+                        
+                        $tax_terms = get_terms($taxonomy, array('hide_empty' => false));
+                                              
+                        foreach($tax_terms as $term_single) { 
+                      ?>
+                            <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
+                      
+                      <?php         
+                        } 
+                          
+                      ?>
+                  </div>
+                  <div class="sub_nav_side">
+                    <div class="subnav_title">i feel like</div>
+                     <?php 
+                        $taxonomy = 'linea';
+                        
+                        $tax_terms = get_terms($taxonomy, array('hide_empty' => false));
+                                              
+                        foreach($tax_terms as $term_single) { 
+                      ?>
+                            <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
+                      
+                      <?php         
+                        } 
+                          
+                      ?>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="center" id="logo">

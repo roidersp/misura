@@ -1,0 +1,50 @@
+/* Language Packs */
+
+#bogo-languages-table tbody th {
+	width: 2em;
+	border-left: inherit;
+	border-right: 0;
+	padding-left:	inherit;
+	padding-right: 16px;
+}
+
+#bogo-languages-table tbody tr.active th {
+	border-left: inherit;
+	border-right: 4px solid #00a0d2;
+	padding-left: inherit;
+	padding-right: 12px;
+}
+
+#bogo-languages-table tbody a.install,
+#bogo-languages-table tbody a.activate {
+	margin-left: inherit;
+	margin-right: .4em;
+}
+
+/* Terms Translation */
+
+#bogo-translation-table input.large-text {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+#bogo-translation-table input.large-text:hover {
+	padding-right: 5px;
+	margin-right: 1px;
+}
+
+#bogo-translation-table input.large-text:focus {
+	padding-right: 5px;
+	margin-right: 1px;
+}
+
+/* Post */
+
+ul#bogo-translations li {
+	margin-right: 1.4em;
+}
+
+#bogo-add-translation-actions span.spinner,
+#bogo-add-translation-actions button {
+	float: right;
+}

@@ -97,13 +97,15 @@ Template Name: Home
       	<div id="contact_form">
         	<div id="contact_text">
           	Nos interesa tu opinión e inquietudes. ¡Escríbenos! 
-          	<div>
-            	<?php echo do_shortcode( '[contact-form-7 id="96" title="Contact form 1"]' ) ?>
+        	</div>
+          	<div id="form_contact">
+            	<?php echo do_shortcode( '[contact-form-7 id="98" title="Contacto"]' ) ?>
           	</div>
         	</div>
       	</div>
     	</div>
   	</section>
+  	
   	
   	
 <?php get_footer(); ?>

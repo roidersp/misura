@@ -98,12 +98,60 @@ header{
       width: 100%;
       .nav_item{
         width: 50%;
-        display: block;float: left;
+        display: block;
+        float: left;
+        height: 50px;
         font-family: $font-pop;
         color: #004074;
         font-size: 34px;
         text-transform: uppercase;
         text-align: center;
+        a{
+          color: #004074;
+        }
+        .nav_subitem{
+          width: auto;
+          display: none;
+        }
+        .subnav_cont{
+          background-color: white;
+          border-radius: 15px;
+          display: table;
+          padding: 30px  0;
+          text-align: left;
+          .sub_nav_side{
+            display: table-cell;
+            padding: 0 20px;
+            font-family: $font-pop;
+            .subnav_title{
+              min-width: 86px;
+              font-size: 22px;
+              color: #013c71;
+              margin-bottom: 20px;
+            }
+            &:nth-child(even){
+              border-left: 1px dashed #00aeef;
+              a{color: #424242;}
+            }
+            &:nth-child(odd){
+              a{color: #00aeef;}
+            }
+            .sub_item{
+              display: table;
+              line-height: 28px;
+              font-size: 22px;
+              text-align: left;
+
+            }
+          }
+        }
+      }
+    }
+    #prodructos_nav{
+      &:hover{
+        .nav_subitem{
+          display: block;
+        }
       }
     }
   }
@@ -188,17 +236,17 @@ header{
 
 #social-hub{
   padding-top: 64px;
+  padding-bottom: 50px;
   margin-left: -2rem;
   margin-right: -2rem;
   background-image: url(assets/images/social-hub-back.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top 145px; 
-  .social-cont{
+  #social-cont{
     padding: 0 2rem;
     margin-top: 10px;
     padding-top: 30px;
-    
     display: table;
     padding-bottom: 60px;
   }
@@ -238,7 +286,110 @@ header{
 
 
 #contacto{
-  
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #013c71;
+  display: table;
+  width: 100%;
+  .container{
+    background-image: url(assets/images/contacto_img.png);
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+    display: table;
+  }
+  #contact_form{
+    width: 570px;
+    float: right;
+    margin-right: 50px;
+    text-align: center;
+    #contact_text{
+      font-family: $font-primary;
+      font-size: 39px;
+      text-align: center;
+      color: white;
+    }
+    #form_contact{
+      width: 435px;
+      margin: auto;
+      color: #013c71;
+      &::-webkit-input-placeholder {
+           color: #013c71;
+        }
+        
+        :-moz-placeholder { /* Firefox 18- */
+           color: #013c71;  
+        }
+        
+        ::-moz-placeholder {  /* Firefox 19+ */
+           color: #013c71;  
+        }
+        
+        :-ms-input-placeholder {  
+           color: #013c71;  
+        }
+        
+      input{
+        background-color: white;
+        color: black;
+        padding: 0 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       margin: auto;
+        &[type="checkbox"]:not(:checked), &[type="checkbox"]:checked{
+          position: absolute;
+          left: 0;
+          opacity: 1;
+          margin-top: 0px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+      textarea{
+        background-color: white;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       min-width: 100%;
+       resize: none;
+       height: 166px;
+       padding: 10px;
+      }
+      .terminos{
+        color: white;
+        position: relative;
+        padding-left: 30px;
+        width: 100%;
+         box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        .wpcf7-list-item-label, .wpcf7-form-control{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .g-recaptcha{
+    div{
+      margin: 20px auto;
+      width: 100% !important;
+    }
+  }
+}
+
+footer{
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  #logo_footer{
+    width: 190px;
+    margin: auto;
+    margin-top: -38px;
+    img{
+      width: 100%;
+    }
+  }
 }
 
 

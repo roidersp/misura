@@ -130,7 +130,6 @@ function create_book_taxonomies() {
         'update_item' => __( 'Actualizar Linea' ),
         'add_new_item' => __( 'Añadir nuevo Linea' ),
         'new_item_name' => __( 'Nombre del nuevo Linea' ),
-        'menu_name' => __('News Categories', 'Productos')
         
 );
 register_taxonomy( 'linea', array( 'productos' ), array(
