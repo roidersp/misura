@@ -193,6 +193,19 @@ footer .footer_social .social_item { display: inline-block; width: 60px; height:
 
 footer .footer_social .social_item img { width: 100%; }
 
+/*======= Te tratamos bien =======*/
+#tratamos .container { width: 934px; }
+
+#tratamos .tratamos_header { width: 100%; background-color: #004270; padding: 52px 0; text-align: center; }
+
+#tratamos .tratamos_header img { width: 90%; max-width: 437px; margin-bottom: 10px; }
+
+#tratamos .tratamos_header span { width: 94%; max-width: 640px; text-align: center; font-family: "PopulaireLight"; font-weight: 300; font-size: 26px; color: white; line-height: 30px; margin-top: 15px; }
+
+#tratamos .row { padding: 0; margin: 0; font-size: 0; }
+
+#tratamos .col { margin: 0; padding: 0; }
+
 /*======= MEDIA QUERIES =======*/
 /* == iPad Horizontal == */
 /* == iPad Vertical == */

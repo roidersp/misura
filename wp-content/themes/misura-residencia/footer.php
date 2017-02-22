@@ -9,8 +9,8 @@
         	</div>
         	<div class="col s2">
           	<div class="footer_social">
-            	<div class="social_item"><a href="#"><img src="<?= get_template_directory_uri(); ?>/assets/images/sm-footer-fb.png" alt="sm-footer-fb" /></a></div>
-            	<div class="social_item"><a href="#"><img src="<?= get_template_directory_uri(); ?>/assets/images/sm-footer-inst.png" alt="sm-footer-inst" /></a></div>
+            	<div class="social_item"><a href="https://www.facebook.com/MisuraMX/"><img src="<?= get_template_directory_uri(); ?>/assets/images/sm-footer-fb.png" alt="sm-footer-fb" /></a></div>
+            	<div class="social_item"><a href="https://www.instagram.com/misuramex/"><img src="<?= get_template_directory_uri(); ?>/assets/images/sm-footer-inst.png" alt="sm-footer-inst" /></a></div>
           	</div>
         	</div>
         	<div class="col s5"></div>

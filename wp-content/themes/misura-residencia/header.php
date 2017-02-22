@@ -15,11 +15,11 @@
     	<div class="container">
       	<div id="social_header">
         	<div class="social_header_item">
-          	<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sm-header-fb.png" alt="sm-header-fb" ></a>
+          	<a href="https://www.facebook.com/MisuraMX/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sm-header-fb.png" alt="sm-header-fb" ></a>
         	</div>
         	<div class="social_header_sep"></div>
         	<div class="social_header_item">
-          	<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sm-header-inst.png" alt="sm-header-inst" ></a>
+          	<a href="https://www.instagram.com/misuramex/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sm-header-inst.png" alt="sm-header-inst" ></a>
         	</div>
       	</div>
       	<div class="left header_nav">
@@ -70,7 +70,7 @@
         </div>
         <div class="right header_nav">
           <div class="nav_cont">
-            <div class="nav_item">Te tratamos bien</div>
+            <div class="nav_item"><a href="te-tratamos-bien"> Te tratamos bien</a></div>
             <div class="nav_item">Respuestas Misura</div>
           </div>
         </div>
