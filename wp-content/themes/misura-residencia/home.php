@@ -55,18 +55,16 @@ Template Name: Home
       	<img src="<?= get_template_directory_uri(); ?>/assets/images/social-hub.png" alt="social-hub"/>
     	</div>
     	<div id="social-cont" class="col s12">
+      	<div class="social_in">
     	<?php
         // check if the repeater field has rows of data
         if( have_rows('social_hub') ):
-        
          	// loop through the rows of data
             while ( have_rows('social_hub') ) : the_row();
-            
             ?>
              <div class="social-item col s3 social_<?= get_sub_field( "red_social" ) ?>" >
                <a href="<?= get_sub_field( "url" ) ?>"><img src="<?= get_sub_field( "imagen" )["url"] ?>" alt="" /></a>
              </div>
-
         <?php
             endwhile;
              while ( have_rows('social_hub') ) : the_row();
@@ -86,6 +84,7 @@ Template Name: Home
         endif;
         
         ?>
+      	</div>
     	</div>
     	<div id="social_more">
       	

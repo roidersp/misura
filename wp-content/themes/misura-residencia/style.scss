@@ -86,6 +86,35 @@ header{
   .container{
     padding: 50px 0;
     display: table;
+    position: relative;
+  }
+  #social_header{
+    min-width: 80px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    //border: 2px dashed white;
+    border-top: none;
+    background-image: url(assets/images/sm-header-rectangulo.png);
+    background-position: left -6px top;
+    padding: 0 8px;
+    .social_header_item{
+      width: 40px;
+      float: left;
+      &:hover{
+        opacity: .7;
+      }
+      img{
+        width: 100%;
+      }
+    }
+    .social_header_sep{
+      float: left;
+      width: 1px;
+      height: 26px;
+      margin-top: 7px;
+      background-color: #013c71;
+    }
   }
   nav{
     background-color: transparent;
@@ -257,12 +286,40 @@ header{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center top 145px; 
+  transition: all 1s ease-in-out;
   #social-cont{
     padding: 0 2rem;
     margin-top: 10px;
     padding-top: 30px;
     display: table;
     padding-bottom: 60px;
+    float: none;
+    transition: all 1s ease-in-out;
+  }
+  #social_more{
+    width: 72px;
+    height: 73px;
+    background-image: url(assets/images/ver-mas-sprite.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    &:hover{
+      background-position: left 100% center;
+    }
+     &.ocultar{
+      transform: rotate(180deg);
+    }
+  }
+  .social_in{
+    height: 0;
+    overflow: hidden;
+    &.mostrar{
+      transition: all 1s ;
+    }
+    
   }
   .social-item{
     padding: 0 !important;
@@ -270,16 +327,21 @@ header{
     font-size: 0;
     position: relative;
     overflow: hidden;
-    
+    &.social_fb a:after{
+       background-image: url(assets/images/hub-hover-fb.png);
+      }
+      &.social_ig a:after{
+        background-image: url(assets/images/hub-hover-inst.png);
+      }
     a{
       display: table;
       position: relative;
+      
       &:after{
         content: '';
         width: 100%;
         height: 100%;
         position: relative;
-        background-color: rgba(29, 15, 104, 0.5);
         position: absolute;
         top: 0;
         bottom: 0;
@@ -308,6 +370,7 @@ header{
   background-repeat: no-repeat;
   display: table;
   width: 100%;
+  background-size: auto 100%;
   .container{
     background-image: url(assets/images/contacto_img.png);
     background-repeat: no-repeat;
@@ -373,6 +436,9 @@ header{
        height: 166px;
        padding: 10px;
       }
+      input[type="text"], textarea{
+         border-radius: 3px;
+       }
       .terminos{
         color: white;
         position: relative;
@@ -383,6 +449,32 @@ header{
        -moz-box-sizing: border-box;
         .wpcf7-list-item-label, .wpcf7-form-control{
           width: 100%;
+        }
+      }
+      p{
+        position: relative;
+      }
+      .wpcf7-response-output{
+        width: 60%;
+        float: left;
+        margin: auto;
+        margin-top: -30px;
+        color: white;
+       
+      }
+      .wpcf7-submit{
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0);
+        width: 129px;
+        height: 73px;
+        outline: none;
+        border: none;
+        background-image: url(assets/images/enviar-sprite.png);
+        background-size: auto 100%;
+        background-position: left center;
+        float: right;
+        &:hover{
+          background-position: left 100% center;
         }
       }
     }

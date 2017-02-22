@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 4.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.5
+Stable tag: 1.6
 
 
 Save Contact Form 7 data. Sort, search & export it in CSV+PDF. Best UI. Fully tested with WP 4.5.3 + CF7 4.4.2 & Totally Supported.
@@ -72,6 +72,10 @@ Select any form for which you want to download the entries, from the populated e
 10. **Deleted Form Entries** - This facility allows you to keep the data of deleted CF7 Forms. Even if you have deleted CF7 form, you can still keep track of entries made through those form.
 
 == Changelog == 
+
+= 1.6 =
+
+* Jquery error resolved. 
 
 = 1.5 =
 

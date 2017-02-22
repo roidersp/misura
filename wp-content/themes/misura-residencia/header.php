@@ -13,6 +13,15 @@
 	<body <?php body_class(); ?> >
   	<header>
     	<div class="container">
+      	<div id="social_header">
+        	<div class="social_header_item">
+          	<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sm-header-fb.png" alt="sm-header-fb" ></a>
+        	</div>
+        	<div class="social_header_sep"></div>
+        	<div class="social_header_item">
+          	<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sm-header-inst.png" alt="sm-header-inst" ></a>
+        	</div>
+      	</div>
       	<div class="left header_nav">
           <div class="nav_cont">
             <div href="#" class="nav_item"><a href="#">Valores</a></div>
@@ -57,7 +66,7 @@
           </div>
         </div>
         <div class="center" id="logo">
-          <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-misura.png" alt="" />
+          <a href="/"> <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-misura.png" alt="" /></a>
         </div>
         <div class="right header_nav">
           <div class="nav_cont">

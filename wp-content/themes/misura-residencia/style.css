@@ -25,7 +25,17 @@ body { background-color: #f3e6cc; padding-top: 120px; }
 
 header { background-color: #f3e6cc; position: fixed; top: 0; width: 100%; z-index: 10; }
 
-header .container { padding: 50px 0; display: table; }
+header .container { padding: 50px 0; display: table; position: relative; }
+
+header #social_header { min-width: 80px; position: absolute; top: 0; right: 15px; border-top: none; background-image: url(assets/images/sm-header-rectangulo.png); background-position: left -6px top; padding: 0 8px; }
+
+header #social_header .social_header_item { width: 40px; float: left; }
+
+header #social_header .social_header_item:hover { opacity: .7; }
+
+header #social_header .social_header_item img { width: 100%; }
+
+header #social_header .social_header_sep { float: left; width: 1px; height: 26px; margin-top: 7px; background-color: #013c71; }
 
 header nav { background-color: transparent; box-shadow: none; }
 
@@ -93,21 +103,35 @@ header .right .nav_cont { float: left; }
 
 .titulo_image { display: table; margin: auto; }
 
-#social-hub { padding-top: 64px; padding-bottom: 50px; margin-left: -2rem; margin-right: -2rem; background-image: url(assets/images/social-hub-back.png); background-size: contain; background-repeat: no-repeat; background-position: center top 145px; }
+#social-hub { padding-top: 64px; padding-bottom: 50px; margin-left: -2rem; margin-right: -2rem; background-image: url(assets/images/social-hub-back.png); background-size: contain; background-repeat: no-repeat; background-position: center top 145px; transition: all 1s ease-in-out; }
 
-#social-hub #social-cont { padding: 0 2rem; margin-top: 10px; padding-top: 30px; display: table; padding-bottom: 60px; }
+#social-hub #social-cont { padding: 0 2rem; margin-top: 10px; padding-top: 30px; display: table; padding-bottom: 60px; float: none; transition: all 1s ease-in-out; }
+
+#social-hub #social_more { width: 72px; height: 73px; background-image: url(assets/images/ver-mas-sprite.png); background-repeat: no-repeat; background-position: left center; background-size: auto 100%; margin: auto; cursor: pointer; margin-top: 20px; }
+
+#social-hub #social_more:hover { background-position: left 100% center; }
+
+#social-hub #social_more.ocultar { transform: rotate(180deg); }
+
+#social-hub .social_in { height: 0; overflow: hidden; }
+
+#social-hub .social_in.mostrar { transition: all 1s; }
 
 #social-hub .social-item { padding: 0 !important; margin: 0 !important; font-size: 0; position: relative; overflow: hidden; }
 
+#social-hub .social-item.social_fb a:after { background-image: url(assets/images/hub-hover-fb.png); }
+
+#social-hub .social-item.social_ig a:after { background-image: url(assets/images/hub-hover-inst.png); }
+
 #social-hub .social-item a { display: table; position: relative; }
 
-#social-hub .social-item a:after { content: ''; width: 100%; height: 100%; position: relative; background-color: rgba(29, 15, 104, 0.5); position: absolute; top: 0; bottom: 0; opacity: 0; z-index: 2; left: 0; transition: all 0.3s ease-in-out; }
+#social-hub .social-item a:after { content: ''; width: 100%; height: 100%; position: relative; position: absolute; top: 0; bottom: 0; opacity: 0; z-index: 2; left: 0; transition: all 0.3s ease-in-out; }
 
 #social-hub .social-item a:hover:after { opacity: 1; }
 
 #social-hub .social-item img { width: 100%; }
 
-#contacto { padding-top: 60px; padding-bottom: 40px; background-color: #013c71; background-image: url(assets/images/back-azul-home.jpg); background-position: center center; background-repeat: no-repeat; display: table; width: 100%; }
+#contacto { padding-top: 60px; padding-bottom: 40px; background-color: #013c71; background-image: url(assets/images/back-azul-home.jpg); background-position: center center; background-repeat: no-repeat; display: table; width: 100%; background-size: auto 100%; }
 
 #contacto .container { background-image: url(assets/images/contacto_img.png); background-repeat: no-repeat; background-position: left 10px center; display: table; }
 
@@ -131,9 +155,19 @@ header .right .nav_cont { float: left; }
 
 #contacto #contact_form #form_contact textarea { background-color: white; width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; min-width: 100%; resize: none; height: 166px; padding: 10px; }
 
+#contacto #contact_form #form_contact input[type="text"], #contacto #contact_form #form_contact textarea { border-radius: 3px; }
+
 #contacto #contact_form #form_contact .terminos { color: white; position: relative; padding-left: 30px; width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
 
 #contacto #contact_form #form_contact .terminos .wpcf7-list-item-label, #contacto #contact_form #form_contact .terminos .wpcf7-form-control { width: 100%; }
+
+#contacto #contact_form #form_contact p { position: relative; }
+
+#contacto #contact_form #form_contact .wpcf7-response-output { width: 60%; float: left; margin: auto; margin-top: -30px; color: white; }
+
+#contacto #contact_form #form_contact .wpcf7-submit { background-color: transparent; color: rgba(255, 255, 255, 0); width: 129px; height: 73px; outline: none; border: none; background-image: url(assets/images/enviar-sprite.png); background-size: auto 100%; background-position: left center; float: right; }
+
+#contacto #contact_form #form_contact .wpcf7-submit:hover { background-position: left 100% center; }
 
 #contacto .g-recaptcha div { margin: 20px auto; width: 100% !important; }
 

@@ -6,13 +6,14 @@
   Description: A simple plugin to save contact form data to db.
   Author: Nimblechapps
   Author URI: http://nimblechapps.com
-  Version: 1.5
+  Version: 1.6
  */
 //function to check dependencies for Contact Form 7 Plugin
 
 if (!defined('ABSPATH')) {
     exit;
 }
+define('SAVE_CF7_ADMIN_MENU','save_contact_form_7'); // define menu slug name
 add_action('wp_head','nimble_scf7_ajaxurl');
 function nimble_scf7_ajaxurl() {
 ?>
@@ -63,7 +64,12 @@ if (is_admin()) {
 
     if (!function_exists('nimble_scripts')) {
 
-        function nimble_scripts() {
+        function nimble_scripts($hook) {
+
+             if ($hook != 'toplevel_page_'.SAVE_CF7_ADMIN_MENU) {
+                    return;
+                }
+
 //register css for datatables and bootstrap
             wp_register_style('nimble_dt_process_circle_style', plugin_dir_url(__FILE__) . 'assets/DataTables/media/css/dataTables.customLoader.circle.css');
             wp_register_style('nimble_dt_process_walker_style', plugin_dir_url(__FILE__) . 'assets/DataTables/media/css/dataTables.customLoader.walker.css');
@@ -105,7 +111,7 @@ if (is_admin()) {
             $page_title = 'Save Contact Form 7';
             $menu_title = 'Save CF7';
             $capability = 'manage_options';
-            $menu_slug = 'save_contact_form_7';
+            $menu_slug = SAVE_CF7_ADMIN_MENU;
             $function = 'nimble_populate_page';
             $icon_url = plugins_url('save-contact-form-7/assets/images/icon.png');
             $position = 99;
@@ -777,8 +783,8 @@ if (!function_exists("nimble_save_cf7_data")) {
         /* for version 3.1 and 3.1.1 start */
         if ($plugin_data['contact-form-7/wp-contact-form-7.php']['Version'] == "3.1.1" || $plugin_data['contact-form-7/wp-contact-form-7.php']['Version'] == "3.1") {
 
-        	if(isset($table) && $table != ""){
-        		$row_fields = $wpdb->get_results("SHOW full COLUMNS FROM $table");
+            if(isset($table) && $table != ""){
+                $row_fields = $wpdb->get_results("SHOW full COLUMNS FROM $table");
             }
             $fname = array_values($submited['uploaded_files']);
             $fieldname = key($submited['uploaded_files']);
