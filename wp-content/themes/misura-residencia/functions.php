@@ -120,27 +120,29 @@ add_action( 'init', 'create_book_taxonomies', 0 );
 function create_book_taxonomies() {
         // Añadimos nueva taxonomía y la hacemos jerárquica (como las categorías por defecto)
         $labels = array(
-        'name' => _x( 'Lineas', 'taxonomy general name' ),
-        'singular_name' => _x( 'Linea', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Buscar por Linea' ),
-        'all_items' => __( 'Todos los Lineas' ),
-        'parent_item' => __( 'Linea padre' ),
-        'parent_item_colon' => __( 'Linea padre:' ),
-        'edit_item' => __( 'Editar Linea' ),
-        'update_item' => __( 'Actualizar Linea' ),
-        'add_new_item' => __( 'Añadir nuevo Linea' ),
-        'new_item_name' => __( 'Nombre del nuevo Linea' ),
+          'name' => _x( 'Lineas', 'taxonomy general name' ),
+          'singular_name' => _x( 'Linea', 'taxonomy singular name' ),
+          'search_items' =>  __( 'Buscar por linea' ),
+          'all_items' => __( 'Todos los lineas' ),
+          'parent_item' => __( 'Linea padre' ),
+          'parent_item_colon' => __( 'Linea padre:' ),
+          'edit_item' => __( 'Editar linea' ),
+          'update_item' => __( 'Actualizar linea' ),
+          'add_new_item' => __( 'Añadir nueva linea' ),
+          'new_item_name' => __( 'Nombre del nuevo linea' ),
+        );
         
-);
 register_taxonomy( 'linea', array( 'productos' ), array(
         'hierarchical' => true,
-        'label' => 'News Categories',
         'labels' => $labels, /* Aquí es donde se utiliza la variable $labels que hemos creado arriba*/
         'show_ui' => true,
         'query_var' => true,
         'show_in_nav_menus' => true,
-        'rewrite' => array( 'slug' => 'linea', 'with_front' => false ),
+        'rewrite' => array( 'slug' => 'productos/linea', 'with_front' => false ),
 ));
+
+
+
 // Añado otra taxonomía, esta vez no es jerárquica, como las etiquetas.
 $labels = array(
          'name' => _x( 'Clase', 'taxonomy general name' ),
@@ -162,7 +164,7 @@ register_taxonomy( 'clase', array( 'productos' ), array(
         'show_ui' => true,
         'query_var' => true,
         'show_in_nav_menus' => true,
-        'rewrite' => array( 'slug' => 'productos', 'with_front' => false ),
+        'rewrite' => array( 'slug' => 'productos/clase', 'with_front' => false ),
 ));
 
 flush_rewrite_rules();

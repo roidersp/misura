@@ -547,7 +547,20 @@ footer{
   .container{
     width: 934px;
   }
-  .tratamos_header{
+  
+  .col{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.norow.row{
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+ .custom_header{
     width: 100%;
     background-color: #004270;
     padding: 52px 0;
@@ -570,16 +583,6 @@ footer{
       margin-top: 15px;
     }
   }
-  .row{
-    padding: 0;
-    margin: 0;
-    font-size: 0;
-  }
-  .col{
-    margin: 0;
-    padding: 0;
-  }
-}
 
 
 /*========== Productos ==============*/
@@ -610,6 +613,7 @@ footer{
     #productos_banner{
       width: 1110px;
       font-size: 0;
+      margin: auto;
       margin-top: 20px;
       a{
         display: table;
@@ -654,6 +658,132 @@ footer{
   }
 }
 
+
+/*======== Respuestas misura =======*/
+
+#respuestas{
+  margin-bottom: 80px;
+  .collapsible{
+    border: 0 !important;
+    box-shadow: none;
+  }
+  .container{
+    width: 934px;
+  }
+  .preguntas{
+    margin-top: 40px;
+    .preguntas_title{
+      font-family: $font-pop;
+      font-size: 45px;
+    }
+    .collapsible-header{
+        background-color: #f9efe0;
+        padding: 0;
+      }
+    .pregunta_container{
+      width: 100%;
+      height: 94px;
+      display: flex-box;
+       font-family: 'Roboto';
+       padding-left: 45px; 
+       padding-right: 100px;
+      .pregunta_num{
+        height: 100%;
+        line-height: 94px;
+       font-size: 35px;
+        color: #008fa9;
+        width: 40px;
+        text-align: center;
+        float: left;
+      }
+      .pregunta_text{
+        display: table;
+        max-width: calc( 100% - 55px );
+        float: left;
+        padding-left: 15px;
+        height: 94px;
+        font-size: 23px;
+        line-height: 23px;
+        color: #004270;
+        .pregunta_text_in{
+          display: table-cell;
+          vertical-align: middle;
+        }
+        
+      }
+    }
+    .active{
+      .collapsible-header{
+        &:after{
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .collapsible-body{
+          padding: 30px 100px;
+          color: #004270;
+          font-family: "Roboto";
+          font-size: 21px;
+          p{
+            padding: 0;
+            padding-bottom: 35px;
+          }
+          ul, li{
+            list-style: disc;
+            margin-left: 25px;
+          }
+        }
+    .collapsible-header{
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        width: 52px;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-size: 52px auto;
+        background-position: right  center;
+      }
+    }
+  }
+  #compania{
+    .preguntas_title{
+      color: #008fa9;
+    }
+    .collapsible-header{
+      &:after{
+        background-image: url(assets/images/flecha-azul.png);
+      }
+      
+    }
+  }
+  #p_nutricionales{
+    .preguntas_title{
+      color: #6b772a;
+    }
+    .collapsible-header{
+      &:after{
+        background-image: url(assets/images/flecha-verde.png);
+      }
+      
+    }
+  }
+  #p_productos{
+    .preguntas_title{
+      color: #663300;
+    }
+    .collapsible-header{
+      &:after{
+        background-image: url(assets/images/flecha-cafe.png);
+      }
+      
+    }
+  }
+}
 
 
 @import 'style2';

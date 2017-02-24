@@ -6,7 +6,7 @@ Template Name: Te tratamos bien
 <?php get_header(); ?>
 <main id="tratamos">
   <div class="container">
-    <div class="tratamos_header">
+    <div class="custom_header">
       <img src="<?= get_template_directory_uri(); ?>/assets/images/Te-tratamos-title.png" alt="Te-tratamos-title"  />
       <div style="clear: both"></div>
       <span>
@@ -21,7 +21,7 @@ Hay un nuevo “bienestar” en el aire: El bienestar Misura que te consciente y
          	// loop through the rows of data
             while ( have_rows('contenido') ) : the_row();
             ?>
-             <div class="row">
+             <div class="row norow">
                <div class="col s12 m6">
                  <img src="<?= get_sub_field( "imagen_izq" )["url"] ?>" alt="<?= get_sub_field( "imagen_izq" )["alt"] ?>" />
                </div>

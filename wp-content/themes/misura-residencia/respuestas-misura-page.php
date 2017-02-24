@@ -1,35 +1,48 @@
 <?php
 /*
-Template Name: Te tratamos bien
+Template Name: Respuestas Misura
 */
 ?>
-<?php get_header(); ?>
-<main id="tratamos">
+<?php 
+  get_header();
+  $num = 1;   
+?>
+<main id="respuestas">
   <div class="container">
-    <div class="tratamos_header">
-      <img src="<?= get_template_directory_uri(); ?>/assets/images/Te-tratamos-title.png" alt="Te-tratamos-title"  />
+    <div class="custom_header">
+      <img src="<?= get_template_directory_uri(); ?>/assets/images/Respuestas-title.png" alt="Te-tratamos-title"  />
       <div style="clear: both"></div>
       <span>
-        Activa todos tus sentidos, un nuevo mundo te espera.<br>
-Hay un nuevo “bienestar” en el aire: El bienestar Misura que te consciente y te trata bien
+       Hemos reunido las respuestas de las preguntas más comunes en la siguiente lista.<br>
+Si ninguna de ellas resuelve la pregunta que tienes, por favor contáctanos
+y estaremos felices de responderte.
       </span>
     </div>
-    <div class="tratamos_contenido">
-      <?php
+    <section class="preguntas" id="compania">
+      <div class="preguntas_title">
+        Compañía y medio ambiente
+      </div>
+      <div class="container">
+        <ul class="collapsible" data-collapsible="expandable">
+         <?php
         // check if the repeater field has rows of data
-        if( have_rows('contenido') ):
+        if( have_rows('compania') ):
+        
          	// loop through the rows of data
-            while ( have_rows('contenido') ) : the_row();
+            while ( have_rows('compania') ) : the_row();
             ?>
-             <div class="row">
-               <div class="col s12 m6">
-                 <img src="<?= get_sub_field( "imagen_izq" )["url"] ?>" alt="<?= get_sub_field( "imagen_izq" )["alt"] ?>" />
-               </div>
-               <div class="col s12 m6">
-                 <img src="<?= get_sub_field( "imagen_der" )["url"] ?>" alt="<?= get_sub_field( "imagen_der" )["alt"] ?>" />
-               </div>
-             </div>
+            <li>
+              <div class="collapsible-header">
+                <div class="pregunta_container">
+                  <div class="pregunta_num"><?= $num ?></div>
+                  <div class="pregunta_text"><div class="pregunta_text_in"><?= get_sub_field("pregunta"); ?></div></div>
+                </div>
+              </div>
+              <div class="collapsible-body"><span><?= get_sub_field("respuesta"); ?></span></div>
+            </li>
         <?php
+            $num++;
+          
             endwhile;
         
         else :
@@ -39,7 +52,85 @@ Hay un nuevo “bienestar” en el aire: El bienestar Misura que te consciente y
         endif;
         
         ?>
-    </div>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="preguntas" id="p_productos">
+      <div class="preguntas_title">
+       Productos
+      </div>
+      <div class="container">
+        <ul class="collapsible" data-collapsible="expandable">
+         <?php
+        // check if the repeater field has rows of data
+        if( have_rows('productos') ):
+        
+         	// loop through the rows of data
+            while ( have_rows('productos') ) : the_row();
+            ?>
+            <li>
+              <div class="collapsible-header">
+                <div class="pregunta_container">
+                  <div class="pregunta_num"><?= $num ?></div>
+                  <div class="pregunta_text"><div class="pregunta_text_in"><?= get_sub_field("pregunta"); ?></div></div>
+                </div>
+              </div>
+              <div class="collapsible-body"><span><?= get_sub_field("respuesta"); ?></span></div>
+            </li>
+        <?php
+            $num++;
+          
+            endwhile;
+        
+        else :
+        
+            // no rows found
+        
+        endif;
+        
+        ?>
+        </ul>
+      </div>
+    </section>
+    <section class="preguntas" id="p_nutricionales">
+      <div class="preguntas_title">
+       Propiedades Nutricionales
+      </div>
+      <div class="container">
+        <ul class="collapsible" data-collapsible="expandable">
+         <?php
+        // check if the repeater field has rows of data
+        if( have_rows('propiedades_nutricionales') ):
+        
+         	// loop through the rows of data
+            while ( have_rows('propiedades_nutricionales') ) : the_row();
+            ?>
+            <li>
+              <div class="collapsible-header">
+                <div class="pregunta_container">
+                  <div class="pregunta_num"><?= $num ?></div>
+                  <div class="pregunta_text"><div class="pregunta_text_in"><?= get_sub_field("pregunta"); ?></div></div>
+                </div>
+              </div>
+              <div class="collapsible-body"><span><?= get_sub_field("respuesta"); ?></span></div>
+            </li>
+        <?php
+            $num++;
+          
+            endwhile;
+        
+        else :
+        
+            // no rows found
+        
+        endif;
+        
+        ?>
+        </ul>
+      </div>
+    </section>
+     
   </div>
 </main>
 <?php get_footer(); ?>

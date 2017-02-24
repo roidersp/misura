@@ -198,15 +198,15 @@ footer .footer_social .social_item img { width: 100%; }
 /*======= Te tratamos bien =======*/
 #tratamos .container { width: 934px; }
 
-#tratamos .tratamos_header { width: 100%; background-color: #004270; padding: 52px 0; text-align: center; }
-
-#tratamos .tratamos_header img { width: 90%; max-width: 437px; margin-bottom: 10px; }
-
-#tratamos .tratamos_header span { width: 94%; max-width: 640px; text-align: center; font-family: "PopulaireLight"; font-weight: 300; font-size: 26px; color: white; line-height: 30px; margin-top: 15px; }
-
-#tratamos .row { padding: 0; margin: 0; font-size: 0; }
-
 #tratamos .col { margin: 0; padding: 0; }
+
+.norow.row { padding: 0; margin: 0; font-size: 0; }
+
+.custom_header { width: 100%; background-color: #004270; padding: 52px 0; text-align: center; }
+
+.custom_header img { width: 90%; max-width: 437px; margin-bottom: 10px; }
+
+.custom_header span { width: 94%; max-width: 640px; text-align: center; font-family: "PopulaireLight"; font-weight: 300; font-size: 26px; color: white; line-height: 30px; margin-top: 15px; }
 
 /*========== Productos ==============*/
 #productos { margin: 30px 0px 50px 0px; }
@@ -221,7 +221,7 @@ footer .footer_social .social_item img { width: 100%; }
 
 #productos .productos_header .linea_menu_cont .linea_menu_item img { height: 52px; }
 
-#productos .productos_header #productos_banner { width: 1110px; font-size: 0; margin-top: 20px; }
+#productos .productos_header #productos_banner { width: 1110px; font-size: 0; margin: auto; margin-top: 20px; }
 
 #productos .productos_header #productos_banner a { display: table; }
 
@@ -238,6 +238,51 @@ footer .footer_social .social_item img { width: 100%; }
 #productos .productos_header .clase_menu_cont .clase_menu_item .clase_icon img { height: 100%; }
 
 #productos .productos_header .clase_menu_cont .clase_menu_item .clase_name { line-height: 30px; color: white; float: left; font-size: 30px; text-transform: uppercase; font-family: "PopulaireW00"; padding-left: 15px; }
+
+/*======== Respuestas misura =======*/
+#respuestas { margin-bottom: 80px; }
+
+#respuestas .collapsible { border: 0 !important; box-shadow: none; }
+
+#respuestas .container { width: 934px; }
+
+#respuestas .preguntas { margin-top: 40px; }
+
+#respuestas .preguntas .preguntas_title { font-family: "PopulaireW00"; font-size: 45px; }
+
+#respuestas .preguntas .collapsible-header { background-color: #f9efe0; padding: 0; }
+
+#respuestas .preguntas .pregunta_container { width: 100%; height: 94px; display: flex-box; font-family: 'Roboto'; padding-left: 45px; padding-right: 100px; }
+
+#respuestas .preguntas .pregunta_container .pregunta_num { height: 100%; line-height: 94px; font-size: 35px; color: #008fa9; width: 40px; text-align: center; float: left; }
+
+#respuestas .preguntas .pregunta_container .pregunta_text { display: table; max-width: calc( 100% - 55px); float: left; padding-left: 15px; height: 94px; font-size: 23px; line-height: 23px; color: #004270; }
+
+#respuestas .preguntas .pregunta_container .pregunta_text .pregunta_text_in { display: table-cell; vertical-align: middle; }
+
+#respuestas .preguntas .active .collapsible-header:after { transform: rotate(180deg); }
+
+#respuestas .preguntas .collapsible-body { padding: 30px 100px; color: #004270; font-family: "Roboto"; font-size: 21px; }
+
+#respuestas .preguntas .collapsible-body p { padding: 0; padding-bottom: 35px; }
+
+#respuestas .preguntas .collapsible-body ul, #respuestas .preguntas .collapsible-body li { list-style: disc; margin-left: 25px; }
+
+#respuestas .preguntas .collapsible-header { position: relative; }
+
+#respuestas .preguntas .collapsible-header:after { content: ""; position: absolute; width: 52px; height: 100%; top: 0; bottom: 0; right: 20px; z-index: 2; background-repeat: no-repeat; background-size: 52px auto; background-position: right  center; }
+
+#respuestas #compania .preguntas_title { color: #008fa9; }
+
+#respuestas #compania .collapsible-header:after { background-image: url(assets/images/flecha-azul.png); }
+
+#respuestas #p_nutricionales .preguntas_title { color: #6b772a; }
+
+#respuestas #p_nutricionales .collapsible-header:after { background-image: url(assets/images/flecha-verde.png); }
+
+#respuestas #p_productos .preguntas_title { color: #663300; }
+
+#respuestas #p_productos .collapsible-header:after { background-image: url(assets/images/flecha-cafe.png); }
 
 /*======= MEDIA QUERIES =======*/
 /* == iPad Horizontal == */

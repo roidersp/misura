@@ -24,9 +24,9 @@
       	</div>
       	<div class="left header_nav">
           <div class="nav_cont">
-            <div href="#" class="nav_item"><a href="#">Valores</a></div>
-            <div href="#" class="nav_item" id="prodructos_nav">
-              <a href="productos">Productos</a>
+            <div  class="nav_item"><a href="#">Valores</a></div>
+            <div  class="nav_item" id="prodructos_nav">
+              <a href="<?php site_url(); ?>/productos">Productos</a>
               <div class="nav_subitem">
                 <div class="subnav_cont">
                   <div class="sub_nav_side">
@@ -66,12 +66,12 @@
           </div>
         </div>
         <div class="center" id="logo">
-          <a href="/"> <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-misura.png" alt="" /></a>
+          <a href="<?php site_url(); ?>"> <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-misura.png" alt="" /></a>
         </div>
         <div class="right header_nav">
           <div class="nav_cont">
-            <div class="nav_item"><a href="te-tratamos-bien"> Te tratamos bien</a></div>
-            <div class="nav_item">Respuestas Misura</div>
+            <div class="nav_item"><a href="<?php site_url(); ?>/te-tratamos-bien"> Te tratamos bien</a></div>
+            <div class="nav_item"><a href="<?php site_url(); ?>/respuestas-misura"> Respuestas Misura</a></div>
           </div>
         </div>
       </div>
