@@ -26,5 +26,12 @@ $(document).ready(function() {
    }
   });
   
+  // tamaño menus linea
+  
+ $( ".linea_menu_item" ).each(function( index ) {
+    item_w = $(this).find("img").width();
+    $(this).css("width",(item_w/2)+"px");
+});
+  
   
 });

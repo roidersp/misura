@@ -82,7 +82,7 @@ function my_custom_init() {
         $labels = array(
         'name' => _x( 'Productos', 'post type general name' ),
         'singular_name' => _x( 'Producto', 'post type singular name' ),
-        'add_new' => _x( 'Añadir nuevo', 'book' ),
+        'add_new' => _x( 'Añadir producto', 'book' ),
         'add_new_item' => __( 'Añadir nuevo producto' ),
         'edit_item' => __( 'Editar producto' ),
         'new_item' => __( 'Nuevo producto' ),
@@ -143,20 +143,20 @@ register_taxonomy( 'linea', array( 'productos' ), array(
 ));
 // Añado otra taxonomía, esta vez no es jerárquica, como las etiquetas.
 $labels = array(
-         'name' => _x( 'Tipos', 'taxonomy general name' ),
-        'singular_name' => _x( 'Tipo', 'taxonomy singular name' ),
-        'search_items' =>  __( 'Buscar por Tipos' ),
-        'all_items' => __( 'Todos los Tipos' ),
-        'parent_item' => __( 'Tipo padre' ),
+         'name' => _x( 'Clase', 'taxonomy general name' ),
+        'singular_name' => _x( 'Clase', 'taxonomy singular name' ),
+        'search_items' =>  __( 'Buscar por Clases' ),
+        'all_items' => __( 'Todos los Clases' ),
+        'parent_item' => __( 'Clase padre' ),
         'parent_item_colon' => __( 'Tipo padre:' ),
-        'edit_item' => __( 'Editar Tipo' ),
-        'update_item' => __( 'Actualizar Tipo' ),
-        'add_new_item' => __( 'Añadir nuevo Tipo' ),
-        'new_item_name' => __( 'Nombre del nuevo Tipo' ),
+        'edit_item' => __( 'Editar Clase' ),
+        'update_item' => __( 'Actualizar Clase' ),
+        'add_new_item' => __( 'Añadir nuevo Clase' ),
+        'new_item_name' => __( 'Nombre del nuevo Clase' ),
         'show_in_nav_menus' => true
 );
  
-register_taxonomy( 'tipo', array( 'productos' ), array(
+register_taxonomy( 'clase', array( 'productos' ), array(
         'hierarchical' => true,
         'labels' => $labels, /* Aquí es donde se utiliza la variable $labels que hemos creado arriba*/
         'show_ui' => true,

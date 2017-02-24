@@ -26,7 +26,7 @@
           <div class="nav_cont">
             <div href="#" class="nav_item"><a href="#">Valores</a></div>
             <div href="#" class="nav_item" id="prodructos_nav">
-              <a href="">Productos</a>
+              <a href="productos">Productos</a>
               <div class="nav_subitem">
                 <div class="subnav_cont">
                   <div class="sub_nav_side">
