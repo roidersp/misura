@@ -61,8 +61,8 @@ a:visited, a:active{
 /*======= Header =======*/
 
 body{
-  background-color: #f3e6cc;
-  padding-top: 150px;
+  background-color: #f5e5cb;
+  padding-top: 165px;
 }
 
 .container{
@@ -85,13 +85,15 @@ body{
 }
 
 header{
+  background-image: url(assets/images/lineas-header.jpg);
+  background-position: center top;
   background-color: #f3e6cc;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
   .container{
-    padding: 50px 0;
+    padding: 57px 0;
     display: table;
     position: relative;
   }
@@ -103,7 +105,7 @@ header{
     //border: 2px dashed white;
     border-top: none;
     background-image: url(assets/images/sm-header-rectangulo.png);
-    background-position: left -6px top;
+    background-position: left -4px top -3px;
     padding: 0 8px;
     .social_header_item{
       width: 40px;

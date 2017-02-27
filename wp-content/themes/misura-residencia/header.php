@@ -24,21 +24,21 @@
       	</div>
       	<div class="left header_nav">
           <div class="nav_cont">
-            <div  class="nav_item"><a href="#">Valores</a></div>
+            <div  class="nav_item" style="text-align: left;"><a href="#">Piacere misura</a></div>
             <div  class="nav_item" id="prodructos_nav">
-              <a href="<?php site_url(); ?>/productos">Productos</a>
+              <a style="margin-left: -40px;" href="<?= site_url(); ?>/productos">Productos</a>
               <div class="nav_subitem">
                 <div class="subnav_cont">
                   <div class="sub_nav_side">
                     <div class="subnav_title">the line for me</div>
                       <?php 
-                        $taxonomy = 'tipo';
+                        $taxonomy = 'clase';
                         
                         $tax_terms = get_terms($taxonomy, array('hide_empty' => false));
                                               
                         foreach($tax_terms as $term_single) { 
                       ?>
-                        <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
+                        <div class="sub_item"><a href="<?= site_url(); ?>/productos/clase/<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
                       
                       <?php         
                         } 
@@ -54,7 +54,7 @@
                                               
                         foreach($tax_terms as $term_single) { 
                       ?>
-                        <div class="sub_item"><a href="<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
+                        <div class="sub_item"><a href="<?= site_url(); ?>/productos/linea/<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
                       
                       <?php         
                         } 
@@ -66,12 +66,12 @@
           </div>
         </div>
         <div class="center" id="logo">
-          <a href="<?php site_url(); ?>"> <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-misura.png" alt="" /></a>
+          <a href="<?= site_url(); ?>"> <img src="<?= get_template_directory_uri(); ?>/assets/images/logo-misura.png" alt="" /></a>
         </div>
         <div class="right header_nav">
           <div class="nav_cont">
-            <div class="nav_item"><a href="<?php site_url(); ?>/te-tratamos-bien"> Te tratamos bien</a></div>
-            <div class="nav_item"><a href="<?php site_url(); ?>/respuestas-misura"> Respuestas Misura</a></div>
+            <div class="nav_item" ><a href="<?= site_url(); ?>/te-tratamos-bien"> Te tratamos bien</a></div>
+            <div class="nav_item" style="text-align: right;"><a href="<?= site_url(); ?>/respuestas-misura"> Respuestas Misura</a></div>
           </div>
         </div>
       </div>

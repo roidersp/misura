@@ -17,7 +17,7 @@ a:visited, a:active { text-decoration: none !important; border: none; outline: n
 @font-face { font-family: 'PopulaireLight'; src: url("assets/fonts/Populaire/PopulaireLight.eot"); src: url("assets/fonts/Populaire/PopulaireLight.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Populaire/PopulaireLight.woff2") format("woff2"), url("assets/fonts/Populaire/PopulaireLight.woff") format("woff"), url("assets/fonts/Populaire/PopulaireLight.ttf") format("truetype"), url("assets/fonts/Populaire/PopulaireLight.svg#PopulaireLight") format("svg"); font-weight: 300; font-style: normal; }
 
 /*======= Header =======*/
-body { background-color: #f3e6cc; padding-top: 150px; }
+body { background-color: #f5e5cb; padding-top: 165px; }
 
 .container { width: 1140px; }
 
@@ -25,11 +25,11 @@ body { background-color: #f3e6cc; padding-top: 150px; }
 
 .home .row { margin-bottom: 5px; }
 
-header { background-color: #f3e6cc; position: fixed; top: 0; width: 100%; z-index: 10; }
+header { background-image: url(assets/images/lineas-header.jpg); background-position: center top; background-color: #f3e6cc; position: fixed; top: 0; width: 100%; z-index: 10; }
 
-header .container { padding: 50px 0; display: table; position: relative; }
+header .container { padding: 57px 0; display: table; position: relative; }
 
-header #social_header { min-width: 80px; position: absolute; top: 0; right: 15px; border-top: none; background-image: url(assets/images/sm-header-rectangulo.png); background-position: left -6px top; padding: 0 8px; }
+header #social_header { min-width: 80px; position: absolute; top: 0; right: 15px; border-top: none; background-image: url(assets/images/sm-header-rectangulo.png); background-position: left -4px top -3px; padding: 0 8px; }
 
 header #social_header .social_header_item { width: 40px; float: left; }
 
