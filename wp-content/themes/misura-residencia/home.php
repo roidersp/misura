@@ -4,7 +4,7 @@ Template Name: Home
 */
 ?>
 <?php get_header(); ?>
-<main class="container">
+<main id="home" class="container">
 <section id="home_slider" class="row">
     	<div class="slider-home col s12">
       	

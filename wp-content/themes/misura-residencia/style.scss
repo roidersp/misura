@@ -65,8 +65,12 @@ body{
   padding-top: 165px;
 }
 
+#home .container{
+  width: 1140px;
+}
+
 .container{
- width: 1140px;
+ width: 992px;
 }
 
 #logo{
@@ -80,7 +84,35 @@ body{
 
 .home{
   .row{
-    margin-bottom: 5px;
+    margin-bottom: 5px;   
+  }
+}
+
+#home.container{
+  position: relative;
+  &:before{
+    background-image: url(assets/images/izq-prueba.png);
+    content: "";
+    width: 362px;
+    height: 2463px;
+    position: absolute;
+    left: -290px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 155px;
+  }
+  &:after{
+    background-image: url(assets/images/der-prueba.png);
+    content: "";
+    width: 362px;
+    height: 2463px;
+    position: absolute;
+    right: -290px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    bottom: 155px;
   }
 }
 
@@ -328,7 +360,6 @@ header{
     &.mostrar{
       transition: all 1s ;
     }
-    
   }
   .social-item{
     padding: 0 !important;
@@ -368,7 +399,6 @@ header{
     }
   }
 }
-
 
 #contacto{
   padding-top: 60px;
@@ -423,8 +453,8 @@ header{
         padding: 0 10px;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-       margin: auto;
+        -moz-box-sizing: border-box;
+        margin: auto;
         &[type="checkbox"]:not(:checked), &[type="checkbox"]:checked{
           position: absolute;
           left: 0;
@@ -439,11 +469,11 @@ header{
         width: 100%;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-       min-width: 100%;
-       resize: none;
-       height: 166px;
-       padding: 10px;
+        -moz-box-sizing: border-box;
+        min-width: 100%;
+        resize: none;
+        height: 166px;
+        padding: 10px;
       }
       input[type="text"], textarea{
          border-radius: 3px;
@@ -453,9 +483,9 @@ header{
         position: relative;
         padding-left: 30px;
         width: 100%;
-         box-sizing: border-box;
+        box-sizing: border-box;
         -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         .wpcf7-list-item-label, .wpcf7-form-control{
           width: 100%;
         }
@@ -469,7 +499,6 @@ header{
         margin: auto;
         margin-top: -30px;
         color: white;
-       
       }
       .wpcf7-submit{
         background-color: transparent;
@@ -787,6 +816,14 @@ footer{
   }
 }
 
+
+/*========  TAXONOMY ===========*/
+
+.container_tax{
+  padding: 80px 70px;
+  background-color: white;
+  position: relative;
+}
 
 @import 'style2';
 

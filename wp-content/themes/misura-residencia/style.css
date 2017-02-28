@@ -19,11 +19,19 @@ a:visited, a:active { text-decoration: none !important; border: none; outline: n
 /*======= Header =======*/
 body { background-color: #f5e5cb; padding-top: 165px; }
 
-.container { width: 1140px; }
+#home .container { width: 1140px; }
+
+.container { width: 992px; }
 
 #logo { display: table; float: left; margin-top: -100px; position: absolute; left: 50%; transform: translateX(-50%); }
 
 .home .row { margin-bottom: 5px; }
+
+#home.container { position: relative; }
+
+#home.container:before { background-image: url(assets/images/izq-prueba.png); content: ""; width: 362px; height: 2463px; position: absolute; left: -290px; background-size: 100%; background-repeat: no-repeat; background-position: center center; top: 155px; }
+
+#home.container:after { background-image: url(assets/images/der-prueba.png); content: ""; width: 362px; height: 2463px; position: absolute; right: -290px; background-size: 100%; background-repeat: no-repeat; background-position: center center; bottom: 155px; }
 
 header { background-image: url(assets/images/lineas-header.jpg); background-position: center top; background-color: #f3e6cc; position: fixed; top: 0; width: 100%; z-index: 10; }
 
@@ -283,6 +291,9 @@ footer .footer_social .social_item img { width: 100%; }
 #respuestas #p_productos .preguntas_title { color: #663300; }
 
 #respuestas #p_productos .collapsible-header:after { background-image: url(assets/images/flecha-cafe.png); }
+
+/*========  TAXONOMY ===========*/
+.container_tax { padding: 80px 70px; background-color: white; position: relative; }
 
 /*======= MEDIA QUERIES =======*/
 /* == iPad Horizontal == */
