@@ -24,30 +24,23 @@
       	</div>
       	<div class="left header_nav">
           <div class="nav_cont">
-            <div  class="nav_item" style="text-align: left;"><a href="#">Piacere misura</a></div>
-            <div  class="nav_item" id="prodructos_nav">
+            <div  class="nav_item nav_item_hover" style="text-align: left;">
+              <a href="#">Piacere misura</a>
+              <div class="nav_subitem">
+                  <div class="subnav_cont subnav_center" >
+                     <div class="sub_nav_side"><div class="sub_item"><a href="<?= site_url(); ?>/historia">Historia</a></div></div>
+                     <div class="sub_nav_side"><div class="sub_item"><a href="<?= site_url(); ?>/valores">Valores</a></div></div>
+                  </div>
+              </div>
+            </div>
+            <div  class="nav_item nav_item_hover" id="prodructos_nav">
               <a style="margin-left: -40px;" href="<?= site_url(); ?>/productos">Productos</a>
+
               <div class="nav_subitem">
                 <div class="subnav_cont">
                   <div class="sub_nav_side">
                     <div class="subnav_title">the line for me</div>
                       <?php 
-                        $taxonomy = 'clase';
-                        
-                        $tax_terms = get_terms($taxonomy, array('hide_empty' => false));
-                                              
-                        foreach($tax_terms as $term_single) { 
-                      ?>
-                        <div class="sub_item"><a href="<?= site_url(); ?>/productos/clase/<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
-                      
-                      <?php         
-                        } 
-                          
-                      ?>
-                  </div>
-                  <div class="sub_nav_side">
-                    <div class="subnav_title">i feel like</div>
-                     <?php 
                         $taxonomy = 'linea';
                         
                         $tax_terms = get_terms($taxonomy, array('hide_empty' => false));
@@ -58,10 +51,27 @@
                       
                       <?php         
                         } 
+                          
+                      ?>
+                  </div>
+                  <div class="sub_nav_side">
+                    <div class="subnav_title">i feel like</div>
+                     <?php 
+                        $taxonomy = 'clase';
+                        
+                        $tax_terms = get_terms($taxonomy, array('hide_empty' => false));
+                                              
+                        foreach($tax_terms as $term_single) { 
+                      ?>
+                        <div class="sub_item"><a href="<?= site_url(); ?>/productos/clase/<?= $term_single->slug; ?>"><?= $term_single->name; ?></a></div>
+                      
+                      <?php         
+                        } 
                       ?>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

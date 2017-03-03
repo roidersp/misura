@@ -1,13 +1,10 @@
 social_hub = false;
 $(document).ready(function() {
-  
-  console.log("test");
-  
+    
   social_item_h = $(".social-item").height();
   
   $(".social_in").css("height",social_item_h*2);
   
-  console.log(social_item_h);
   
   $(document).on("click","#social_more",function(){
    if(social_hub){

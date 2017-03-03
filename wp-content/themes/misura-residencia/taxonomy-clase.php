@@ -16,7 +16,7 @@
           foreach($tax_terms as $term_single) { 
              $imagen_tax = get_field("imagen_con_hover",$term_single);
         ?>
-          <div class="linea_menu_item"><a href="<?= $term_single->slug; ?>"><img src="<?= $imagen_tax["url"]; ?>" alt="<?= $term_single->name; ?>" /></a></div>
+          <div class="linea_menu_item"><a href="<?= site_url(); ?>/productos/linea/<?= $term_single->slug; ?>"><img src="<?= $imagen_tax["url"]; ?>" alt="<?= $term_single->name; ?>" /></a></div>
         
         <?php         
           } 
@@ -27,7 +27,6 @@
     <div id="productos_banner">
       
         <?php 
-          $query = get_queried_object();
           $banner = get_field("banner", get_queried_object());
         ?>
        <img src="<?= $banner["url"] ?>" alt="<?= $banner["alt"] ?>"  />
@@ -41,7 +40,7 @@
             $icono = get_field("icono",$term_single);
         ?>
           <div class="clase_menu_item">
-            <a href="<?= $term_single->slug; ?>">
+            <a href="<?= site_url(); ?>/productos/clase/<?= $term_single->slug; ?>">
               <div class="clase_icon"><img src="<?= $icono["url"]; ?>" alt="<?= $term_single->name; ?>" /></div>
               <div class="clase_name"><?= $term_single->name; ?></div>            
             </a>
@@ -82,26 +81,18 @@ $tax = "linea";
             $array = [];
             
             if( $my_query->have_posts() ) : 
-            
-                $array["name"]= $tax_term->name;
-               
+                $array["name"] = $tax_term->name;
+                $array["image"] = get_field("imagen", "linea_".$tax_term->term_id);
                 while ( $my_query->have_posts() ) : $my_query->the_post(); 
-                                  
                   $term_list = get_the_terms($post->ID, "clase");
                   $in_tax = false;
-                  
                   foreach($term_list as $term){
                     if($term != null && $term->term_id == $current_cat) $in_tax = true;
                   }
-
-                  if ($in_tax): // Display only posts that have current category ID 
+                  if($in_tax): // Display only posts that have current category ID 
                     $array["post"][] = $post;
                   endif; // if in_array 
-                
-                
-                  
                 endwhile; // end of loop
-                
                 $post_by_term[] = $array;
                 
             endif; // if have_posts()
@@ -113,7 +104,35 @@ $tax = "linea";
 ?>
 
 <div class="container container_tax">
-  
+  <div class="tax_title">
+     <?php 
+          $img_title = get_field("imagen_titulo", get_queried_object());
+        ?>
+       <img src="<?= $img_title["url"] ?>" alt="<?= $img_title["alt"] ?>"  />
+  </div>
+  <div class="tax_products">
+    <?php foreach( $post_by_term as $item ){ 
+      if(isset($item["post"]) && count($item["post"])>0){ ?>
+      <div class="tax_products_cont">
+        <div class="tax_sec_title"><img src="<?= $item["image"]["url"] ?>" alt="<?= $item["image"]["alt"] ?>" /></div>
+        <div class="row">
+        <?php foreach( $item["post"] as $post ){ ?>
+          <a href="<?php the_permalink(); ?>"><div class="item_product col s3">
+            <div class="product_image">
+              <?php if ( has_post_thumbnail() ) the_post_thumbnail( 'medium' );   ?> 
+            </div>
+            <div class="product_name"><?php the_title();?> </div>
+          </div>
+          </a>
+        <?php } ?>
+        </div>
+      </div>
+     <?php  }
+    ?> 
+    <br><br>
+      
+    <?php } ?>
+  </div>
 </div>
 
 

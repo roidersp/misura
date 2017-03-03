@@ -1,0 +1,432 @@
+/*
+Theme Name:  Misura Residencia
+Description: Sitio de Misura
+Version: 1.0
+Author: Anotnio Luz
+Author URI: luzalcuadrado.com
+*/
+ 
+/* ======= Valores ======= */
+
+#historia{
+    width: 100%; 
+    margin: 0 auto;
+    .row{
+	    padding: 0px !important;
+    }
+    .noPadding{
+		padding: 0px !important;
+	}
+	.header .ele1{
+		margin: 33px 0 0 -17px;
+	}
+	.header .ele2{
+		    margin: 35px 0 0 0;
+			width: 613px !important;
+			position: absolute;
+	}
+	.header .ele3{
+		margin: 200px 0 0 27px;
+	}
+	.r1{
+		background-color: #013c71; 
+		height: 735px;
+	}
+	.r1 .valign-wrapper{
+		height: 735px; 
+	}
+	.r1 .txtNv{
+		font-family: "PopulaireLight" !important;
+		font-size: 45px; letter-spacing: 1px;
+		font-weight: lighter;
+	    padding: 0px 146px;
+	    color: #ffffff;
+	    text-align: center; 
+	    line-height: 53px;
+	}
+	.r1 .cl1 .valign-wrapper:before { 
+		content:url('assets/images/historia/general/2historia-lineas.png');
+	    position: absolute;
+	    margin-left: -300px;
+		margin-top: 300px;
+	}
+	.r1 .cl1 .valign-wrapper:after {
+		content:url('assets/images/historia/general/2historia-circulos.png');
+        position: absolute;
+		margin-left: 500px;
+		margin-top: 300px;
+	}
+	.r1 .txtNv2{
+		background: url('assets/images/historia/general/2historia-foto-italia.jpg') no-repeat;
+		background-position-x: -477px;
+		height: 735px;
+		
+		
+	}
+	.r2{
+		background: url('assets/images/historia/general/3historia-img.jpg') no-repeat;
+		height: 552px;
+		width: 100%;
+	}
+	.r3{
+		background: #4cabc6; 
+		height: 735px;
+		width: 100%;
+	}
+	.r3 .cl1{
+		background: url('assets/images/historia/general/4historia-galletas-exacto.jpg') no-repeat;
+		background-position-x: -325px;
+		height: 735px;
+	}
+	.r3 .cl2{
+		height: 735px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.r3 .cl2 p{
+		font-family: "PopulaireLight" !important;
+	    font-size: 45px;
+	    letter-spacing: 1px;
+	    font-weight: lighter;
+	    padding: 0px 50px;
+	    color: #ffffff;
+	    text-align: center;
+	    line-height: 55px; 
+	}
+	.r3 .valign-wrapper{
+		height: 735px; 
+	}
+	.r3 .cl2 span{ 
+		background: url('assets/images/historia/general/4historia-trigos.png') no-repeat;
+		height: 110px;
+	    width: 110px;
+	    position: absolute;
+	    margin-left: -76px;
+	    margin-top: 30px;
+
+	}
+	.r3 .contImg{
+		margin-top: -150px;
+	}
+	.r3 .contImg .img2{
+		width: 57px;
+	}
+	.r4{
+		background: url('assets/images/historia/years/back/back-1978.jpg') no-repeat;
+		//background-position-x: -477px;
+		background-position: center;
+		height: 553px;
+		width: 100%;
+	}
+	.r4 .valign-wrapper{
+		height: 553px;
+	}
+	.r4 p{
+		
+		font-family: "PopulaireW00" !important;
+		font-size: 30px; letter-spacing: 1px;
+		font-weight: lighter;
+	    padding: 0px 0px 0px 159px;
+	    color: #ffffff;
+	    text-align: left;
+	    
+	}
+	.r4 .col1 img{
+		    margin-left: 115px;
+	}
+	.r4 .col2 img{ 
+		    margin-left: -93px;
+	}
+	
+	.r5{
+		background: url('assets/images/historia/years/back/back-1989.jpg') no-repeat;
+		//background-position-x: -477px;
+		background-position: center;
+		height: 553px;
+		width: 100%;
+	}
+	.r5 .valign-wrapper{
+		height: 553px;
+	}
+	.r5 p{
+		
+		    font-family: "PopulaireW00" !important;
+		    font-size: 30px; letter-spacing: 1px;
+		    font-weight: lighter;
+		    padding: 0px 135px 0px 0px;
+		    color: #ffffff;
+		    text-align: left;
+		    /* margin-left: -53px; */
+		    position: relative;
+		    left: -100px;
+		    
+	}
+	.r5 .col1 img{
+		margin-left: 0px
+	}
+	.r5 .col2 img{
+		margin-left: -146px
+	}
+	
+	.r6 {
+		background: url('assets/images/historia/years/back/back-2004.jpg') no-repeat;
+		//background-position-x: -477px;
+		background-position: center;
+		height: 553px;
+		width: 100%;
+		
+	}
+	.r6 .valign-wrapper{ 
+		height: 553px;
+	}
+	.r6 p{
+		
+		font-family: "PopulaireW00" !important;
+	    font-size: 30px; letter-spacing: 1px;
+	    font-weight: lighter;
+	    padding: 0px 0px 0px 50px;
+	    color: #ffffff;
+	    text-align: left;
+	    position: relative;
+		right: -89px;
+	    
+	}
+	.r6 .imgT{
+		margin-left: 95px;
+	}
+	.r7{
+		background: url('assets/images/historia/years/back/back-2007.jpg') no-repeat;
+		//background-position-x: -477px;
+		background-position: center;
+		height: 553px;
+		width: 100%;
+	}
+	.r7 .valign-wrapper{
+		height: 553px;
+	}
+	.r7 p{
+		
+		font-family: "PopulaireW00" !important;
+		font-size: 30px; letter-spacing: 1px;
+		font-weight: lighter;
+	    //padding: 0px 135px 0px 44px;
+	    color: #ffffff;
+	    text-align: left;
+	    position: relative;
+		left: -57px;
+	}
+	.r7 .imgT{
+		margin-left: 95px;
+	}
+	.r7 .col2 img{ 
+		position: relative;
+		left: -100px;
+
+	}
+	.r8{
+		background: url('assets/images/historia/years/back/back-2009.jpg') no-repeat;
+		//background-position-x: -477px;
+		background-position: center;
+		height: 553px;
+		width: 100%;
+	}
+	.r8 .valign-wrapper{
+		height: 553px;
+	}
+	.r8 p{
+		
+		font-family: "PopulaireW00" !important;
+	    font-size: 30px; letter-spacing: 1px;
+	    font-weight: lighter;
+	    padding: 0px 0px 0px 0px;
+	    color: #ffffff;
+	    text-align: left;
+	    position: relative;
+	    left: 140px;
+	    
+	}
+	.r8 .imgT{
+		margin-left: 95px;
+	}
+	.r9{
+		background: url('assets/images/historia/years/back/back-2011.jpg') no-repeat;
+		//background-position-x: -477px;
+		background-position: center;
+		height: 553px;
+		width: 100%;
+	}
+	.r9 .valign-wrapper{
+		height: 553px;
+	}
+	.r9 p{
+		
+		font-family: "PopulaireW00" !important;
+		font-size: 30px; letter-spacing: 1px; letter-spacing: 1px;
+		font-weight: lighter;
+	    //padding: 0px 135px 0px 44px;
+	    color: #ffffff;
+	    text-align: left;
+	    position: relative;
+		left: -57px;
+	}
+	.r9 .col2 img{
+		position: relative;
+		left: -100px;
+	}
+	.r10{ width: 100%; background: #edd6b6;}
+	.r10 .valign-wrapper{
+		height: 553px;
+	}
+}
+#valores{
+	.container{ width:1280px;}
+	.col{padding: 0px;}
+	.row{margin: 0px;}
+	
+	.row p{
+		padding: 0px 70px;
+	    line-height: 40px;
+	    font-size: 30px;
+	    letter-spacing: 1px;
+	}
+	.r1 .valign-wrapper, .r2 .valign-wrapper, .r3 .valign-wrapper, .r4 .valign-wrapper, .r5 .valign-wrapper, .r6 .valign-wrapper, .r7 .valign-wrapper, .r8 .valign-wrapper{
+		height: 730px;
+	}
+	.r1 .col1 .valign, .r2 .col2 .valign, .r3 .col1 .valign, .r4 .col2 .valign,  .r5 .col1 .valign, .r6 .col2 .valign,  .r7 .col1 .valign, .r8 .col2 .valign{
+		text-align: center;
+		font-family: "PopulaireW00" !important;
+		font-weight: lighter;
+		
+	}
+	.r1 p, .r4 p, .r5 p{
+		color: #003c70;
+		text-transform: capitalize;
+	}
+	.r8 p{
+		color: #71271a;
+		text-transform: capitalize;
+	}
+	.r2 p, .r3 p, .r6 p, .r7 p{
+		color: #ffffff;
+		text-transform: capitalize;
+	}
+	
+	.r1 .col1, .r5 .col1{
+		background: #99cfcd;
+	}
+	.r2 .col2, .r6 .col2{
+		background: #f28c45;
+	}
+	.r3 .col1, .r7 .col1{
+		background: #4cabc6;
+	}
+	.r4 .col2, .r8 .col2{
+		background: #fdf0d9;
+	}
+	.r1 .col2{
+		background: url('assets/images/valores/fotos/placermisura.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r2 .col1{
+		background: url('assets/images/valores/fotos/innovacion.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r3 .col2{
+		background: url('assets/images/valores/fotos/experiencia.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r4 .col1{
+		background: url('assets/images/valores/fotos/calidad.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r5 .col2{
+		background: url('assets/images/valores/fotos/confianza.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r6 .col1{
+		background: url('assets/images/valores/fotos/integridad.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r7 .col2{
+		background: url('assets/images/valores/fotos/confiablidad.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r8 .col1{
+		background: url('assets/images/valores/fotos/respeto.jpg') no-repeat;
+		background-position: center;
+		height: 730px;
+	}
+	.r2 .col2 .valign:before{
+		content:url('assets/images/valores/titulos/titulo-innov-elementos.png');
+        position: absolute;
+		margin-left: 350px;
+		margin-top: -150px;
+
+	}
+	.r2 .col2 .valign:after{
+		content:url('assets/images/valores/lineas_punteadas/linea-1.png');
+        position: absolute;
+	}
+	.r3 .col1 .valign:before{
+		content:url('assets/images/valores/titulos/titulo-exp-trigos.png');
+        position: absolute;
+        margin-left: -90px;
+		margin-top: 10px;
+
+	}
+	.r3 .col1 .valign:after{
+		content:url('assets/images/valores/titulos/titulo-exp-trigo.png');
+        position: absolute;
+        margin-left: 240px;
+		margin-top: 10px;
+	}
+	.r4 .col2 .valign-wrapper:before{
+		content:url('assets/images/valores/lineas_punteadas/linea-2.png');
+        position: absolute;
+        margin-left: 550px;
+		//margin-top: 10px;
+	}
+	.r5 .col1 .valign:before{
+		content:url('assets/images/valores/titulos/titulo-confianza-trigos.png');
+        position: absolute;
+        margin-top: 51px;
+	    margin-left: -66px;
+	}
+	.r5 .col1 .valign:after{
+		content:url('assets/images/valores/lineas_punteadas/linea-3.png');
+        position: absolute;
+        margin-left: 50px;
+		//margin-top: 10px;
+	}
+	.r6 .col2:before{
+		content:url('assets/images/valores/lineas_punteadas/linea-4.png');
+        position: absolute;
+        margin-left: 500px;
+	}
+	.r6 .col2 .valign:after{
+		content:url('assets/images/valores/titulos/titulo-integridad-circulos.png');
+        position: absolute;
+        margin-top: 60px;
+		margin-left: -280px;
+	}
+	.r7 .col1 .valign:after{
+		content:url('assets/images/valores/titulos/titulo-confiab-trigo.png');
+        position: absolute;
+        margin-left: -30px;
+	}
+	.r8 .col2 .valign:after{
+		content:url('assets/images/valores/lineas_punteadas/linea-5.png');
+        position: absolute;
+        margin-left: 134px;
+		margin-top: -45px;
+	}
+	
+	
+}
