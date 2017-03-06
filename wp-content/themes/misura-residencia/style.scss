@@ -75,9 +75,17 @@ body{
   width: 96%;
 }
 
+
+
 #historia .container{
   max-width: 1280px;
   width: 96%;
+}
+
+.container_big{
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
 }
 
 #valores .container {
@@ -199,11 +207,12 @@ header{
         .nav_subitem{
           width: auto;
           display: none;
-          background-image: url(assets/images/submenu-piacere-arriba.png), url(assets/images/submenu-piacere-abajo.png);
+          background-image: url(assets/images/submenu-piacere-arriba-2.png), url(assets/images/submenu-piacere-abajo.png);
           background-repeat: no-repeat;
           background-size: 100% auto;
           background-position: center top, center bottom;
           margin-top: -7px;
+          margin-left: -100px;
         }
         .subnav_cont{
           background-color: white;
@@ -247,6 +256,26 @@ header{
           
         }
       }
+    }
+    .menu_peque{
+      .subnav_cont{
+        height: 0 !important;
+        transform: translateY(-15px) !important;
+        display: block !important;
+       }
+      .subnav_cont{
+        transform: translateY(-15px);
+      }
+      .nav_subitem{
+
+          background-image: url(assets/images/submenu-piacere-arriba.png), url(assets/images/submenu-piacere-abajo.png) !important;
+          margin-left: 0px !important;
+         
+        }
+        .sub_item{
+          font-size: 27px !important;
+        }
+
     }
     .subnav_center{
       .nav_side{
@@ -459,7 +488,7 @@ header{
   width: 100%;
   background-size: auto 100%;
   .container{
-    background-image: url(assets/images/contacto_img.png);
+    background-image: url(assets/images/back-azul-galletas.png);
     background-repeat: no-repeat;
     background-position: left 10px center;
     display: table;
@@ -647,23 +676,23 @@ footer{
 .custom_header{
   width: 100%;
   background-color: #004270;
-  padding: 52px 0;
+  padding: 52px 60px;
   text-align: center;
   img{
     width: 90%;
     max-width: 437px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   span{
     width: 94%;
     max-width: 640px;
     text-align: center;
     font-family: $font-pop-l;
-    letter-spacing: 1px;
+    letter-spacing: .7px;
     font-weight: 300;
-    font-size: 26px;
+    font-size: 34px;
     color: white;
-    line-height: 30px;
+    line-height: 39px;
     margin-top: 15px;
   }
 }
@@ -684,6 +713,7 @@ footer{
         width: auto;
         overflow: hidden;
         margin: 0 12px;
+        min-width: 120px;
         &:hover{
           img{
             transform: translateX(-50%);
@@ -735,14 +765,15 @@ footer{
           }
         }
         .clase_name{
-          line-height: 36px;
+          line-height: 28px;
           color: white;
           float: left;
           font-size: 30px;
           text-transform: uppercase;
-          font-family: $font-pop;
+          font-family: $font-pop-l;
           padding-left: 7px;
           letter-spacing: 1px;
+          padding-top: 7px;
           
         }
       }
@@ -767,10 +798,23 @@ footer{
       font-family: $font-pop;
       font-size: 45px;
     }
-    .collapsible-header{
-        background-color: #f9efe0;
-        padding: 0;
+    li{
+      &:nth-child(odd){
+        .collapsible-header{
+          background-color: #f9efe0;
+        }
+        
       }
+      &:nth-child(even){
+        .collapsible-header{
+        background-color: transparent;
+        }
+      }
+    }
+    .collapsible-header{
+      background-color: #f9efe0;
+      padding: 0;
+    }
     .pregunta_container{
       width: 100%;
       min-height: 94px;
@@ -958,6 +1002,7 @@ footer{
         position: relative;
         z-index: 1;
         vertical-align: top;
+        padding-bottom: 12px;
         .producto_globo_text_out{
           display: table;
           width: 100%;
@@ -1003,6 +1048,187 @@ footer{
     }
     img{
       margin: auto;
+    }
+    .row{
+      .col{
+        img{
+          margin-top: -135px;
+        }
+      }
+    }
+    .texto_preg_cont{
+      width: 428px;
+      height: 380px;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-size: contain;
+      vertical-align: top;
+      display: table;
+      .texto_preg_out{
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        .texto_preg_in{
+          width: 230px;
+          margin: auto;
+          height: auto;
+          text-align: center;
+          color: #ed7d2a;
+        }
+        p{
+          padding: 0;
+          margin: 0;
+        }
+        .text_preg_main{
+          font-family: $font-pop;
+          font-size: 45px;
+          line-height: 47px;
+          margin-bottom: 5px;
+        }
+        .text_preg_second{
+          font-family: $font-primary;
+          font-size: 34px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+  
+}
+
+#informacion{
+  margin-bottom: 70px;
+  .row{
+    display: table;
+    width: 100%;
+  }
+  .circulo_3{
+    width: 636px;
+    height: 585px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: -50px;
+    .circulo_3_text{
+      width: 350px;
+      height: 280px;
+      display: table;
+      float: right;
+      margin-right: 97px;
+      margin-top: 90px;
+      p{
+        margin: 0;
+        padding: 0;
+      }
+      .circulo_3_text_in{
+        display: table-cell;
+        vertical-align: middle;
+        font-family: $font-primary;
+        font-size: 34px;
+        line-height: 36px;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+   .col{
+    text-align: center;
+  }
+  .img_globo{
+    margin-top: 90px;
+  }
+  .img_gif{
+    margin-top: 44px;
+    width: 400px;
+    height: auto;
+  }
+  .info_title{
+      font-size: 47px;
+      font-family: $font-pop;
+      color: #ed7d2a;
+      text-align: center;
+  }
+  .info_main{
+    margin-bottom: 0px;
+    position: relative;
+    &:after{
+      width: 238px;
+      height: 300px;
+      content: "";
+      background-image: url(assets/images/lineas_back/b.png);
+      position: absolute;
+      right: -300px;
+      top: 20px;
+    }
+  }
+  .info_nutrimental{
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    &:before{
+      width: 310px;
+      height: 1011px;
+      content: "";
+      background-image: url(assets/images/lineas_back/c.png);
+      position: absolute;
+      left: -310px;
+      top: -150px;
+    }
+    &:after{
+       width: 310px;
+      height: 1341px;
+      content: "";
+      background-image: url(assets/images/lineas_back/d.png);
+      position: absolute;
+      right: -310px;
+      top: -355px;
+    }
+    .info_porcion{
+      font-family: "Roboto";
+      background-color: #ed7d2a;
+      color: white;
+      font-size: 21px;
+      width: 100%;
+      padding: 15px 0;
+    }
+    .table_info{
+      tr{
+        color: #3a6380;
+        font-family: "Roboto";
+        font-size: 21px;
+        &:nth-child(odd){
+          background-color: #f7cda5;
+        }
+        &:nth-child(even){
+          background-color: #ffe1b8;
+        }
+        td{
+          width: 50%;
+          height: auto;
+          padding: 5px 15px;
+        }
+      }
+      .tabla_nutricional_izq{
+        text-align: right;
+        
+      }
+    }
+  }
+  .ingredientes{
+    position: relative;
+    .info_title{
+      text-align: left;
+    }
+    .ingredientes_text{
+      color: #3a6380;
+      font-family: "Roboto";
+      font-size: 21px;
+      text-align: left;
+    }
+    .galleta_img{
+      position: absolute;
+      bottom: 0;
     }
   }
   

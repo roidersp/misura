@@ -24,12 +24,12 @@
       	</div>
       	<div class="left header_nav">
           <div class="nav_cont">
-            <div  class="nav_item nav_item_hover" style="text-align: left;">
+            <div  class="nav_item menu_peque nav_item_hover" style="text-align: left;">
               <a href="#">Piacere misura</a>
               <div class="nav_subitem">
                   <div class="subnav_cont subnav_center" >
-                     <div class="sub_nav_side"><div class="sub_item"><a href="<?= site_url(); ?>/historia">Historia</a></div></div>
                      <div class="sub_nav_side"><div class="sub_item"><a href="<?= site_url(); ?>/valores">Valores</a></div></div>
+                     <div class="sub_nav_side"><div class="sub_item"><a href="<?= site_url(); ?>/historia">Historia</a></div></div>
                   </div>
               </div>
             </div>

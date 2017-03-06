@@ -25,6 +25,8 @@ body { background-color: #f5e5cb; padding-top: 165px; overflow-x: hidden; }
 
 #historia .container { max-width: 1280px; width: 96%; }
 
+.container_big { max-width: 1140px; width: 100%; margin: auto; }
+
 #valores .container { max-width: 1920px !important; width: 100% !important; }
 
 #valores .row p { letter-spacing: 1.2px; max-width: 700px; }
@@ -63,7 +65,7 @@ header .header_nav .nav_cont .nav_item { width: 50%; display: block; float: left
 
 header .header_nav .nav_cont .nav_item a { color: #004074; }
 
-header .header_nav .nav_cont .nav_item .nav_subitem { width: auto; display: none; background-image: url(assets/images/submenu-piacere-arriba.png), url(assets/images/submenu-piacere-abajo.png); background-repeat: no-repeat; background-size: 100% auto; background-position: center top, center bottom; margin-top: -7px; }
+header .header_nav .nav_cont .nav_item .nav_subitem { width: auto; display: none; background-image: url(assets/images/submenu-piacere-arriba-2.png), url(assets/images/submenu-piacere-abajo.png); background-repeat: no-repeat; background-size: 100% auto; background-position: center top, center bottom; margin-top: -7px; margin-left: -100px; }
 
 header .header_nav .nav_cont .nav_item .subnav_cont { background-color: white; display: table; margin: 30px  0; text-align: left; margin-top: 48px; margin-bottom: 32px; }
 
@@ -78,6 +80,14 @@ header .header_nav .nav_cont .nav_item .subnav_cont .sub_nav_side a { color: #42
 header .header_nav .nav_cont .nav_item .subnav_cont .sub_nav_side a:hover { color: #00aeef; }
 
 header .header_nav .nav_cont .nav_item .subnav_cont .sub_nav_side .sub_item { display: table; line-height: 28px; font-size: 22px; text-align: left; }
+
+header .header_nav .menu_peque .subnav_cont { height: 0 !important; transform: translateY(-15px) !important; display: block !important; }
+
+header .header_nav .menu_peque .subnav_cont { transform: translateY(-15px); }
+
+header .header_nav .menu_peque .nav_subitem { background-image: url(assets/images/submenu-piacere-arriba.png), url(assets/images/submenu-piacere-abajo.png) !important; margin-left: 0px !important; }
+
+header .header_nav .menu_peque .sub_item { font-size: 27px !important; }
 
 header .header_nav .subnav_center .nav_side { margin-top: -15px; margin-bottom: -15px; }
 
@@ -155,7 +165,7 @@ header .right .nav_cont { float: left; }
 
 #contacto { padding-top: 60px; padding-bottom: 40px; background-color: #013c71; background-image: url(assets/images/back-azul-home.jpg); background-position: center center; background-repeat: no-repeat; display: table; width: 100%; background-size: auto 100%; }
 
-#contacto .container { background-image: url(assets/images/contacto_img.png); background-repeat: no-repeat; background-position: left 10px center; display: table; }
+#contacto .container { background-image: url(assets/images/back-azul-galletas.png); background-repeat: no-repeat; background-position: left 10px center; display: table; }
 
 #contacto #contact_form { width: 570px; float: right; margin-right: 50px; text-align: center; }
 
@@ -222,11 +232,11 @@ footer .footer_social .social_item img { width: 100%; }
 
 .norow.row { padding: 0; margin: 0; font-size: 0; }
 
-.custom_header { width: 100%; background-color: #004270; padding: 52px 0; text-align: center; }
+.custom_header { width: 100%; background-color: #004270; padding: 52px 60px; text-align: center; }
 
-.custom_header img { width: 90%; max-width: 437px; margin-bottom: 10px; }
+.custom_header img { width: 90%; max-width: 437px; margin-bottom: 20px; }
 
-.custom_header span { width: 94%; max-width: 640px; text-align: center; font-family: "PopulaireLight"; letter-spacing: 1px; font-weight: 300; font-size: 26px; color: white; line-height: 30px; margin-top: 15px; }
+.custom_header span { width: 94%; max-width: 640px; text-align: center; font-family: "PopulaireLight"; letter-spacing: .7px; font-weight: 300; font-size: 34px; color: white; line-height: 39px; margin-top: 15px; }
 
 /*========== Productos ==============*/
 #productos { margin: 30px 0px 50px 0px; }
@@ -235,7 +245,7 @@ footer .footer_social .social_item img { width: 100%; }
 
 #productos .productos_header .linea_menu_cont { display: table; margin: auto; }
 
-#productos .productos_header .linea_menu_cont .linea_menu_item { height: 100%; display: inline-block; width: auto; overflow: hidden; margin: 0 12px; }
+#productos .productos_header .linea_menu_cont .linea_menu_item { height: 100%; display: inline-block; width: auto; overflow: hidden; margin: 0 12px; min-width: 120px; }
 
 #productos .productos_header .linea_menu_cont .linea_menu_item:hover img { transform: translateX(-50%); }
 
@@ -259,7 +269,7 @@ footer .footer_social .social_item img { width: 100%; }
 
 #productos .productos_header .clase_menu_cont .clase_menu_item .clase_icon img { height: 100%; }
 
-#productos .productos_header .clase_menu_cont .clase_menu_item .clase_name { line-height: 36px; color: white; float: left; font-size: 30px; text-transform: uppercase; font-family: "PopulaireW00"; padding-left: 7px; letter-spacing: 1px; }
+#productos .productos_header .clase_menu_cont .clase_menu_item .clase_name { line-height: 28px; color: white; float: left; font-size: 30px; text-transform: uppercase; font-family: "PopulaireLight"; padding-left: 7px; letter-spacing: 1px; padding-top: 7px; }
 
 /*======== Respuestas misura =======*/
 #respuestas { margin-bottom: 80px; }
@@ -269,6 +279,10 @@ footer .footer_social .social_item img { width: 100%; }
 #respuestas .preguntas { margin-top: 40px; }
 
 #respuestas .preguntas .preguntas_title { font-family: "PopulaireW00"; font-size: 45px; }
+
+#respuestas .preguntas li:nth-child(odd) .collapsible-header { background-color: #f9efe0; }
+
+#respuestas .preguntas li:nth-child(even) .collapsible-header { background-color: transparent; }
 
 #respuestas .preguntas .collapsible-header { background-color: #f9efe0; padding: 0; }
 
@@ -328,7 +342,7 @@ footer .footer_social .social_item img { width: 100%; }
 
 #producto .producto_main .producto_main_cont { display: table; margin: auto; }
 
-#producto .producto_main .producto_main_cont .producto_globo_text { width: 425px; height: 377px; background-repeat: no-repeat; font-family: "PopulaireLight"; font-size: 36px; color: white; text-transform: uppercase; letter-spacing: 1px; padding: 50px; line-height: 36px; display: table; text-align: center; display: inline-block; margin-right: -45px; position: relative; z-index: 1; vertical-align: top; }
+#producto .producto_main .producto_main_cont .producto_globo_text { width: 425px; height: 377px; background-repeat: no-repeat; font-family: "PopulaireLight"; font-size: 36px; color: white; text-transform: uppercase; letter-spacing: 1px; padding: 50px; line-height: 36px; display: table; text-align: center; display: inline-block; margin-right: -45px; position: relative; z-index: 1; vertical-align: top; padding-bottom: 12px; }
 
 #producto .producto_main .producto_main_cont .producto_globo_text .producto_globo_text_out { display: table; width: 100%; height: 100%; }
 
@@ -346,6 +360,70 @@ footer .footer_social .social_item img { width: 100%; }
 
 #producto .por_que img { margin: auto; }
 
+#producto .por_que .row .col img { margin-top: -135px; }
+
+#producto .por_que .texto_preg_cont { width: 428px; height: 380px; margin: auto; background-repeat: no-repeat; background-size: contain; vertical-align: top; display: table; }
+
+#producto .por_que .texto_preg_cont .texto_preg_out { display: table-cell; vertical-align: middle; width: 100%; }
+
+#producto .por_que .texto_preg_cont .texto_preg_out .texto_preg_in { width: 230px; margin: auto; height: auto; text-align: center; color: #ed7d2a; }
+
+#producto .por_que .texto_preg_cont .texto_preg_out p { padding: 0; margin: 0; }
+
+#producto .por_que .texto_preg_cont .texto_preg_out .text_preg_main { font-family: "PopulaireW00"; font-size: 45px; line-height: 47px; margin-bottom: 5px; }
+
+#producto .por_que .texto_preg_cont .texto_preg_out .text_preg_second { font-family: "Buckley W00 Regular"; font-size: 34px; line-height: 38px; }
+
+#informacion { margin-bottom: 70px; }
+
+#informacion .row { display: table; width: 100%; }
+
+#informacion .circulo_3 { width: 636px; height: 585px; background-size: contain; background-position: center center; background-repeat: no-repeat; text-align: center; margin-top: -50px; }
+
+#informacion .circulo_3 .circulo_3_text { width: 350px; height: 280px; display: table; float: right; margin-right: 97px; margin-top: 90px; }
+
+#informacion .circulo_3 .circulo_3_text p { margin: 0; padding: 0; }
+
+#informacion .circulo_3 .circulo_3_text .circulo_3_text_in { display: table-cell; vertical-align: middle; font-family: "Buckley W00 Regular"; font-size: 34px; line-height: 36px; color: white; text-align: center; }
+
+#informacion .col { text-align: center; }
+
+#informacion .img_globo { margin-top: 90px; }
+
+#informacion .img_gif { margin-top: 44px; width: 400px; height: auto; }
+
+#informacion .info_title { font-size: 47px; font-family: "PopulaireW00"; color: #ed7d2a; text-align: center; }
+
+#informacion .info_main { margin-bottom: 0px; position: relative; }
+
+#informacion .info_main:after { width: 238px; height: 300px; content: ""; background-image: url(assets/images/lineas_back/b.png); position: absolute; right: -300px; top: 20px; }
+
+#informacion .info_nutrimental { margin-bottom: 40px; padding-bottom: 40px; position: relative; }
+
+#informacion .info_nutrimental:before { width: 310px; height: 1011px; content: ""; background-image: url(assets/images/lineas_back/c.png); position: absolute; left: -310px; top: -150px; }
+
+#informacion .info_nutrimental:after { width: 310px; height: 1341px; content: ""; background-image: url(assets/images/lineas_back/d.png); position: absolute; right: -310px; top: -355px; }
+
+#informacion .info_nutrimental .info_porcion { font-family: "Roboto"; background-color: #ed7d2a; color: white; font-size: 21px; width: 100%; padding: 15px 0; }
+
+#informacion .info_nutrimental .table_info tr { color: #3a6380; font-family: "Roboto"; font-size: 21px; }
+
+#informacion .info_nutrimental .table_info tr:nth-child(odd) { background-color: #f7cda5; }
+
+#informacion .info_nutrimental .table_info tr:nth-child(even) { background-color: #ffe1b8; }
+
+#informacion .info_nutrimental .table_info tr td { width: 50%; height: auto; padding: 5px 15px; }
+
+#informacion .info_nutrimental .table_info .tabla_nutricional_izq { text-align: right; }
+
+#informacion .ingredientes { position: relative; }
+
+#informacion .ingredientes .info_title { text-align: left; }
+
+#informacion .ingredientes .ingredientes_text { color: #3a6380; font-family: "Roboto"; font-size: 21px; text-align: left; }
+
+#informacion .ingredientes .galleta_img { position: absolute; bottom: 0; }
+
 /*
 Theme Name:  Misura Residencia
 Description: Sitio de Misura
@@ -355,6 +433,8 @@ Author URI: luzalcuadrado.com
 */
 /* ======= Valores ======= */
 #historia { width: 100%; margin: 0 auto; }
+
+#historia .container { max-width: 100% !important; }
 
 #historia .row { padding: 0px !important; }
 
@@ -376,9 +456,9 @@ Author URI: luzalcuadrado.com
 
 #historia .r1 .cl1 .valign-wrapper:after { content: url("assets/images/historia/general/2historia-circulos.png"); position: absolute; margin-left: 500px; margin-top: 300px; }
 
-#historia .r1 .txtNv2 { background: url("assets/images/historia/general/2historia-foto-italia.jpg") no-repeat; background-position-x: -477px; height: 735px; }
+#historia .r1 .txtNv2 { background: url("assets/images/historia/general/2historia-foto-italia.jpg") no-repeat center right; height: 735px; }
 
-#historia .r2 { background: url("assets/images/historia/general/3historia-img.jpg") no-repeat; height: 552px; width: 100%; }
+#historia .r2 { background: url("assets/images/historia/general/3historia-img.jpg") no-repeat; height: 552px; width: 100%; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 #historia .r3 { background: #4cabc6; height: 735px; width: 100%; }
 
@@ -504,7 +584,7 @@ Author URI: luzalcuadrado.com
 
 #valores .r3 .col1 .valign:after { content: url("assets/images/valores/titulos/titulo-exp-trigo.png"); position: absolute; margin-left: 240px; margin-top: 10px; }
 
-#valores .r4 .col2 .valign-wrapper:before { content: url("assets/images/valores/lineas_punteadas/linea-2.png"); position: absolute; margin-left: 550px; }
+#valores .r4 .col2 .valign:before { content: url("assets/images/valores/lineas_punteadas/linea-2.png"); position: absolute; margin-left: 550px; }
 
 #valores .r5 .col1 .valign:before { content: url("assets/images/valores/titulos/titulo-confianza-trigos.png"); position: absolute; margin-top: 51px; margin-left: -66px; }
 

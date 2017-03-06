@@ -11,6 +11,9 @@ Author URI: luzalcuadrado.com
 #historia{
     width: 100%; 
     margin: 0 auto;
+    .container{
+	    max-width: 100% !important; 
+    }
     .row{
 	    padding: 0px !important;
     }
@@ -57,8 +60,8 @@ Author URI: luzalcuadrado.com
 		margin-top: 300px;
 	}
 	.r1 .txtNv2{
-		background: url('assets/images/historia/general/2historia-foto-italia.jpg') no-repeat;
-		background-position-x: -477px;
+		background: url('assets/images/historia/general/2historia-foto-italia.jpg') no-repeat center right;
+		//background-position-x: -477px;
 		height: 735px;
 		
 		
@@ -67,6 +70,11 @@ Author URI: luzalcuadrado.com
 		background: url('assets/images/historia/general/3historia-img.jpg') no-repeat;
 		height: 552px;
 		width: 100%;
+		background-position: center center;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
 	}
 	.r3{
 		background: #4cabc6; 
@@ -387,7 +395,7 @@ Author URI: luzalcuadrado.com
         margin-left: 240px;
 		margin-top: 10px;
 	}
-	.r4 .col2 .valign-wrapper:before{
+	.r4 .col2 .valign:before{
 		content:url('assets/images/valores/lineas_punteadas/linea-2.png');
         position: absolute;
         margin-left: 550px;
